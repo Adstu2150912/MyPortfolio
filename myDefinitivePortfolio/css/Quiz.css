@@ -189,8 +189,8 @@ form[name="Quiz"] {
     display: inline-block;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 80%; 
+    width: 0%;
+    height: 0vh; 
     position: absolute;
 }
 

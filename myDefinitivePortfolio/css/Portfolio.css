@@ -102,10 +102,8 @@ body {
 
     #main {
         margin-left: 0;
-        width: 100%;
         position: absolute;
         overflow-y: scroll;
-        height: 81%;
         font-size: 14px;
     }
 
@@ -302,11 +300,11 @@ section {
 }
 
 #optie {
-    top: 16.1%;
+    top: 7.1%;
     padding: 0.67% 0;
     display: block;
     background-color: #FFF2CC;
-    width: 80%;
+    width: 100%;
     margin: 10px 0 0 0;
     position: absolute;
 }
@@ -334,12 +332,19 @@ footer
 
 #main > * {
     font-family: ElliotSans-Regular;
+    clear: both;
 }
 
 
 #main {
+    margin: 0;
+    padding: 0;
+    margin-left: 20%;
     margin-top: 91px; 
+    position: relative;
     display: inline-block;
+    width: 0%;
+    height: 0vh;
 }
 
 #main > #gegevens > .kolom456 {
