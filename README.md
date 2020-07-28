@@ -12,13 +12,7 @@ Hier komen en/of staan applicaties die ik heb gemaakt in de loop van heel mijn m
 
 ## Gemaakt in
 
-* [Microsoft Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/downloads/)
-* [Microsoft SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
-* [Xamarin](https://visualstudio.microsoft.com/xamarin/)
-* Desktop versie: [Apache NetBeans 11.3](https://netbeans.apache.org/download/nb113/nb113.html) 
-* Mobiele versie: [Android Studio (3.6.3)](https://developer.android.com/studio/) 
-* [MySQL Workbench 8.0](https://dev.mysql.com/downloads/workbench/) 
-* [MySQL Server 8.0](https://dev.mysql.com/downloads/windows/installer/5.7.html)  
+
 
 ## Auteur
 
