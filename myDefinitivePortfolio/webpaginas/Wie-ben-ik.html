@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<!--
+Opdracht:       Portfoliowebsite
+Auteur:         <Adam Oubelkas>
+Aanmaakdatum:   <22-1-2017 + 11:50>
+Bestandsnaam:   <Wie-ben-ik.html>
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!--Omschrijving van de webpagina-->
+		<meta name="description" content="introductiepagina">
+		<!--Toekennen van sleutelwoorden-->
+		<meta name="keywords" content="Even-voorstellen, introductie, Wie-ben-ik?">
+		<!--Tekstset declareren-->
+        <meta charset="utf-8" />
+        <!--Titel webpagina-->
+        <title>Wie ben ik?</title>
+		<!--Linken naar extern CSS-bestand-->       
+        <link href="../css/Wie-ben-ik.css" rel="stylesheet" type="text/css">
+        <script src="../scripts/jquery-3.2.0.min.js"></script>
+        <script src="../scripts/Script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('header > h1').empty('*');
+                $('header > h1').css('display', 'none');
+                $('header > h1').append("Ik ben Adam Oubelkas, en ik hou van analyseren en programmeren :)").fadeIn(1000);
+                $('section > #main').animate({ width: "80%", height: "100vh" }, 900);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+        <nav>
+                <h3><a href="../index.html">Portfoliowebsite <br> Adam Oubelkas</a></h3>
+                <ul>
+                    <li>
+                        <a href="../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                    </li>
+                </ul>
+            </nav>
+        <section>  
+            <div id="main">
+                <img src="#" alt="Profielachtergrond"></img>
+			    <p>Mijn naam is Adam Oubelkas, ben 19 jaar, en volg momenteel de opleiding Applicatie Ontwikkelaar. Mijn ambitie is om uiteindelijk, met voldoende kennis en ervaring, een professionele applicatie-ontwikkelaar te worden. <br>
+				<br> Op school als thuis verrijk ik mijn kennis en ervaring door mezelf daadwerkelijk te verdiepen in de informatica. 
+				<br><br>Ik begon eerst met de opleiding mediavormgeving, maar nà 2 schooljaren aan beproeving ging mijn voorkeur toch uit naar het ICT, met name applicatie-ontwikkeling/informatica.<br>
+				En zo baan ik mijn weg door applicatie-ontwikkeling/informatica.</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy 2017 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+        </footer>
+    </body>
+</html>

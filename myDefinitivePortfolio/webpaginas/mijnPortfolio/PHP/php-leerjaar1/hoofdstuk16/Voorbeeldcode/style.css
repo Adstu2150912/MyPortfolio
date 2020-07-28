@@ -1,0 +1,54 @@
+#wrapper {
+    width: 1240px;
+    margin: 40px auto;
+}
+
+p {
+    margin: 3px;
+    width: 79px;
+    height: 123px;
+    float: left;
+    left: 88%;
+    background-image: url('cards.png');
+}
+
+hr {
+    clear: both;
+}
+
+.klaveren {
+    background-position-y: 0px;
+}
+
+.ruiten {
+    background-position-y: -123px;
+}
+
+.harten {
+    background-position-y: -246px;
+}
+
+.schoppen {
+    background-position-y: -369px;
+}
+
+/*****************
+.aas {
+    background-position-x: 0;
+}
+
+.twee {
+    background-position-x: -79px;
+}
+********************/
+
+.blind {
+    background-position-y: -492px;
+    background-position-x: -158px;
+    position: absolute;
+}
+
+div.game{
+    position: relative;
+    top: 150px;
+}

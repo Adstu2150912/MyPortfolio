@@ -1,0 +1,196 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: ElliotSans-Regular;
+}
+
+/*.plaatje {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 25% 50% 50% 50%;
+}*/
+
+@media screen and (orientation: portrait) {
+    section > nav 
+    {
+        background-color: #000;
+        min-width: 25%;
+    }
+}
+
+@font-face {
+    font-family: ElliotSans-Regular;
+    src: url('../font/ElliotSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Rounded Elegance";
+    src: url('../font/Rounded_Elegance.ttf');
+}
+
+header {
+    background-color: #DBEEF3;
+    width: 80%;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+}
+
+nav > h3 {
+    padding: 30px 0px;
+    background-color: #31859B;
+	float: left;
+	margin: 0px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    min-width: 20%;
+    transition: 0.5s;
+}
+
+nav > h3 > a {
+    text-align: center;
+    margin: auto auto;
+    display: block;
+    padding: 0 10px;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 25px 0;
+    height: 50px;
+    margin: auto auto;
+    font-family: "Rounded Elegance";
+}
+
+nav > h3:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+     transition: 0.5s;
+}
+
+li:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+nav 
+{
+    background-color: #205867;
+    margin: 0px;
+	display: inline-block;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: #92CDDC;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li {
+    background-color: #C4D6A0;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li {
+    background-color: #FDD048;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li + li {
+    background-color: #FBD7BB;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li + li + li {
+    background-color: #C05046;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul a
+{
+	display: block;
+	width: max-content;
+	text-align: center;
+	padding: 10px 75px;
+}
+
+section {
+    background-color: #fff;
+    height: auto;
+	width: auto;
+	display: inline-block;
+    margin: 0px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: fixed;
+	min-width: 100%;
+	top: 110px;
+	bottom: 0px;
+}
+
+footer {
+	background-color: #90d2e3;
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;	
+	margin: 0px;
+}
+
+form[name= "proloog"] {
+    font-family: ElliotSans-Regular;
+    margin-left: 40%;
+    margin-right: 25%;
+    top: 10%;
+    position: absolute;
+}
+
+form[name="Quiz"] {
+    margin-left: 40%;
+    margin-right: 25%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    display: none;
+}
+
+#spelregels {
+    
+}
+
+#main {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 80%; 
+    position: absolute;
+}
+

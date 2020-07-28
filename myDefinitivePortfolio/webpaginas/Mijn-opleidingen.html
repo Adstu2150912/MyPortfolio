@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<!--
+Opdracht:       Portfoliowebsite
+Auteur:         <Adam Oubelkas>
+Aanmaakdatum:   <22-1-2017 + 14:10>
+Bestandsnaam:   <Mijn-opleidingen.html>
+-->
+<html lang="en">
+    <head>
+        <!--Omschrijving van de webpagina-->
+		<meta name="description" content="Mijn-opleidingenpagina">
+		<!--Toekennen van sleutelwoorden-->
+		<meta name="keywords" content="Mijn opleidingen, HTML/CSS">
+		<!--Tekstset declareren-->
+        <meta charset="utf-8" />
+		<!--Linken naar extern CSS-bestand-->
+        <title>Mijn opleidingen</title>
+        <link href="../css/Opleidingen.css" rel="stylesheet" type="text/css">
+        <script src="../scripts/jquery-3.2.0.min.js"></script>
+        <script src="../scripts/Script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('header > h1').empty('*');
+                $('header > h1').css('display', 'none');
+                $('header > h1').append("Dit zijn mijn opleidingen").fadeIn(1000);
+                $('section > #main').animate({ width: "80%", height: "100vh" }, 900);
+            });
+        </script>
+    </head>
+    <body>
+        <header>          
+            <h1></h1>
+        </header>
+        <nav>
+             <h3><a href="../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>   
+                <ul>
+                    <li>
+                        <a href="../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                    </li>
+                </ul>
+            </nav>
+        <section>   
+            <div id="main">
+                <div id="legenda">
+                    <p id="kolom1">Mijn opleidingen</p>
+                    <p id="kolom2">Tijdsduur</p>
+                    <p id="kolom3">Behaald</p>
+                </div>
+        <div id="optie">
+            <p>Mijn vakkenpakket vind u hier: <a href="vakkenpakket.html">mijnVakkenpakket</a> Mijn cijferlijst vind u hier: <a href="cijferlijst.php">mijnCijferlijst</a></p>
+        </div>
+        <div id="gegevens">
+            <div id="kolom4" class="kolom456">
+                <p>Applicatieontwikkelaar, ICT-Academie,<br>
+    Mbo-niveau 4 BOL,<br>
+    Koning Willem I College, ’s-Hertogenbosch<br>
+            <br>
+    Mediavormgeving/ Media Arts & Performance Academie,<br>
+    Mbo-niveau 4 BOL (opleiding niet afgerond),<br>
+    Koning Willem I College, ’s-Hertogenbosch<br>
+                    <br>
+    Elektrotechniek,<br>
+    Vmbo-kader<br>
+    Dongemond College, Raamsdonksveer</p>
+            </div>
+            <div id="kolom5" class="kolom456">
+                <p>	<br> 
+                    2016 t/m heden 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+	    2014 t/m 2015 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+    2012 t/m 2014</p>
+            </div>
+            <div id="kolom6" class="kolom456">
+                <p><br>
+                    Bezig om diploma te behalen
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+    Gestopt met opleiding
+                    <br>
+                   <br>
+                  <br>
+                    <br>
+    diploma behaald
+                </p>
+            </div>
+        </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy 2017 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+        </footer>
+        
+    </body>
+</html>

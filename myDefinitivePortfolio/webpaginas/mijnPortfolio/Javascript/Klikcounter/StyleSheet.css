@@ -1,0 +1,45 @@
+body {
+}
+button:hover {
+	background-color: #000;
+	color: #ff6a00;
+}
+
+button {
+	border: none;
+	background-color: #ff6a00;
+	color: #000;
+	display: block;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	width: 10%;
+}
+#klikker2 {
+	visibility: hidden;
+	border: none;
+	background-color: #ff6a00;
+	color: #000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	width: 10%; 
+}
+#klikker2:active {
+	background-color: #f00;
+	color: #fff;
+}
+
+table {
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#highscore {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

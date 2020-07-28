@@ -1,0 +1,79 @@
+﻿<!--
+Auteur:         Adam Oubelkas
+Aanmaakdatum:   8-2-2017
+Bestandsnaam:   validatieform.html
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+        Diagrammen
+    </title>
+    <meta name="description" content="Validationform">
+    <meta name="keywords" content="Validation, Javascript, Form, Reservation">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <script src="Script/jquery-3.2.0.min.js"></script>
+    <script src="Script/Diagram.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('header > h1').empty('*');
+            $('header > h1').css('display', 'none');
+            $('header > h1').append("Kies hieronder een diagram").fadeIn(1000);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <nav>
+        <h3><a href="../../../../../../../index.html">Portfolio website <br> Adam Oubelkas</a></h3>
+        <ul>
+            <li>
+                <a href="../../../../../../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+            </li>
+            <li>
+                <a href="../../../../../../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+            </li>
+            <li>
+                <a href="../../../../../../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+            </li>
+            <li>
+                <a href="../../../../../../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div id="main">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" id="UML">UML Activiteitendiagram</a>
+                    </li>
+                    <li>
+                        <a href="#" id="Bachmanndiagram">Bachmanndiagram</a>
+                    </li>
+                    <li>
+                        <a href="#" id="cogNIAM">cogNIAM kennisdiagram</a>
+                    </li>
+                    <li>
+                        <a href="#" id="klassen">klassendiagram</a>
+                    </li>
+                    <li>
+                        <a href="#" id="SQL">SQL - 1 op veel relatie</a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="#" alt="diagram" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy 2017 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
+    </footer>
+</body>
+</html>
