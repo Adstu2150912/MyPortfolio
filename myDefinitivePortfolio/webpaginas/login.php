@@ -7,9 +7,9 @@ session_start();
 if(isset($_POST['wachtwoord'])){
    $errorMsg = isWachtwoord($_POST['wachtwoord']); 
 }
-    else{
-        $errorMsg = "Er is niks ingevuld, dit is verplicht!";
-    }
+/*else{
+    $errorMsg = "Er is niks ingevuld, dit is verplicht!";
+}*/
 
 ?>
 
@@ -33,26 +33,25 @@ Bestandsnaam:   <login.php>
         <!--Link naar extern css bestand-->
         <link href="../css/login.css" rel="stylesheet" type="text/css">
         <script src="../scripts/jquery-3.2.0.min.js"></script>
-        <script src="../scripts/Script.js"></script>
         <script>
             $(document).ready(function () {
                 $('header > h1').empty('*');
                 $('header > h1').css('display', 'none');
                 $('header > h1').append("Welkom! Login om verder te gaan").fadeIn(1000);
-                $('header > h3 > a').empty();
-                $('header > h3 > a').css('display', 'none');
-                $('header > h3 > a').append("Portfoliowebsite <br> Adam Oubelkas ).fadeIn(1000);
+                $('section > nav > h3 > a').empty();
+                $('section > nav > h3 > a').css('display', 'none');
+                $('section > nav > h3 > a').append("Portfoliowebsite <br/> Adam Oubelkas").fadeIn(1000);
 				$('section > #main').animate({width: "80%", height: "100vh"}, 900);
             });
         </script>
     </head>
     <body>
         <header>
-            <h3><a href="../index.html">Portfoliowebsite - Adam Oubelkas</a></h3>
             <h1></h1>
         </header>
         <section>
             <nav>
+				<h3><a href="../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
                 <ul>
                     <li>
                         <a href="../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
@@ -65,9 +64,6 @@ Bestandsnaam:   <login.php>
                     </li>
                     <li>
                         <a href="../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
-                    </li>
-                    <li>
-                        <a href="../webpaginas/Contact.html" id="Contact">Contact</a>
                     </li>
                 </ul>
             </nav>
