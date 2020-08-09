@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Opdracht 110</title>
+    </head>
+    <body>
+		<div>
+			<!--Gemaakt op 16 december 2016 door Adam Oubelkas uit IO1E4-->
+			<form method="get" action="opdracht110.php">
+				<label>Keuze: </label>
+				<input type="checkbox" name="keuze" value="1">
+				<input type="checkbox" name="keuze" value="2">
+				<input type="checkbox" name="keuze" value="3">
+				<br>
+				<label>Plaats: </label>
+				<select name="plaats">
+					<option value="Den Bosch">Den Bosch</option>
+					<option value="Tilburg">Tilburg</option>
+					<option value="Breda">Breda</option>
+				</select>
+				<br>
+				<label>Geslacht: </label>
+				<input type="radio" name="geslacht" value="man">M<br>
+				<input type="radio" name="geslacht" value="vrouw">V<br>
+				<input type="hidden" name="geheim" value="onbekend">
+				<br>
+				<textarea name="tekst">Wat heeft U te zeggen...</textarea>
+
+				<input type="password" name="wachtwoord" value="">
+				<br>
+				<label>Getal 1: </label><input type="text" name="getal">
+				<br>
+				<label>Kies voorkeur: </label>
+				<input type="image" name="nami" src="subscribe.tif" width="100px" height="20px">
+
+				<!--<select name="voorkeur">
+					<option value="Harambe">Harambe</option>
+					<option value="Nami">Onana?</option>
+					<option value="Onana!">Onana!</option>
+					<option value="Andre Onana">Onana!</option>
+					<option value="New Tristram" ></option>New Tristram</option>
+				</select>-->
+				<input type="submit" name="verzend">
+				
+			</form>
+		</div>
+    </body>
+</html>
