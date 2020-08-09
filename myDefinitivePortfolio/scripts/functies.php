@@ -11,25 +11,25 @@ define('SALT', 'portfolio');
 $wachtwoord;
 
 //Checked of er al is ingelogd
-//Zo ja, verwijs naar cijferlijstpagina
+//Zo ja, verwijs naar de hoofdpagina van de website
 //Zo niet, verwijs naar het inlogpagina
 function inloggen($w8w) {
     if(isset($_POST['wachtwoord'])) {
         $_SESSION['wachtwoord'] = $_POST['wachtwoord'];
-        return header('location: cijferlijst.php');
+        return header('location: ../index.html');
     } else {
         return header('location: login.php');   
     }
 }
 
 //Checked of de ingevoerde wachtwoord klopt
-//Zo ja, wordt de bezoeker verwezen naar de cijferlijst pagina
+//Zo ja, wordt de bezoeker verwezen naar de hoofdpagina van de website
 //Zo niet, dan krijgt de bezoeker een foutmelding
 function isWachtwoord($isw8w) {
     if(isset($_POST['wachtwoord'])) {
         if($_POST['wachtwoord'] == 'sesam123'){
             $_SESSION['loggedIn'] = TRUE;
-            header('location: cijferlijst.php');
+            header('location: ../index.html');
         }
         else {
             return 'Voer een geldig wachtwoord in!';

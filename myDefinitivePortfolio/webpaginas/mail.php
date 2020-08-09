@@ -78,7 +78,7 @@ Bestandsnaam:   <login.php>
             </div>
         </section>
         <footer>
-            <p>&copy 2017 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP5.5 en JQuery 3.1.1.</p>
+            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP5.5 en JQuery 3.1.1.</p>
         </footer>
     </body>
 </html>

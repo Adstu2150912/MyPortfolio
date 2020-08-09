@@ -274,38 +274,53 @@ section {
 	right: 0;
 }
 
-#kolom1 {
+.kolom1 {
 		  background-color: #A5A5A5;
           color: white;
 		  float: left;
 		  height: 30px;
 		  margin: 0px;
-		  width: calc(100%/3);
+		  width: calc(100%/5);
   	}
 
-#kolom2 {
+.kolom2 {
 		  background-color: #7F7F7F;
           color: white;
 		  float: left;
-		  width: calc(100%/3);
+		  width: calc(100%/5);
 		  height: 30px;
 		  margin: 0px;
   	}
 
-#kolom3 {
+.kolom3 {
 		  background-color: black;
           color: white;
 		  float: left;
 		  height: 30px;
 		  margin: 0px;
-		  width: calc(100%/3);	  
+		  width: calc(100%/5);	  
   	}
-
+.kolom4 {
+		  background-color: #A5A5A5;
+          color: white;
+		  float: left;
+		  height: 30px;
+		  margin: 0px;
+		  width: calc(100%/5);	  
+  	}
+.kolom5 {
+		  background-color: #7F7F7F;
+          color: white;
+		  float: left;
+		  height: 30px;
+		  margin: 0px;
+		  width: calc(100%/5);	  
+  	}
 
 #legenda > * {
     padding: 10px 0;
     text-align: center;
-    width: calc(100%/3);
+    width: calc(100%/5);
 }
 
 footer {
@@ -335,7 +350,7 @@ section > #main {
 }
 
 #main > #gegevens > .kolom456 {
-    width: calc(100%/3);
+    width: calc(100%/5);
     height: 100vh;
     text-align: center;
 }
