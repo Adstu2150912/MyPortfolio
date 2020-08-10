@@ -33,6 +33,7 @@ Bestandsnaam:   <login.php>
         <!--Link naar extern css bestand-->
         <link href="../css/login.css" rel="stylesheet" type="text/css">
         <script src="../scripts/jquery-3.2.0.min.js"></script>
+		<script src="../scripts/Script.js"></script>
         <script>
             $(document).ready(function () {
                 $('header > h1').empty('*');
@@ -68,11 +69,11 @@ Bestandsnaam:   <login.php>
                 </ul>
             </nav>
             <div id="main">
-                <form method="post" action="login.php">
-                    <label>Wachtwoord </label><input type="password" value="" name ="wachtwoord"> <!--echo isWachtwoord($_SESSION['wachtwoord']);--> 
+                <form id="formulier" method="post" action="login.php">
+                    <label>Wachtwoord </label><input type="password" value="" name="wachtwoord"> <!--echo isWachtwoord($_SESSION['wachtwoord']);--> 
                         <input type="submit" name="verzend" value="verzend">
                             </form>
-                            <p><?php echo $errorMsg ?></p>               
+                            <p id="infoPanel"><?php echo $errorMsg ?></p>               
             </div>
         </section>
         <footer>

@@ -353,3 +353,25 @@ input[name = "bericht"] {
 fieldset {
     border-style: none;
 }
+
+.hide {
+    display: none;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+.fail { 
+    background-image: url("../IMG/cross.png"); 
+}
+.error {
+    background-image: url("../IMG/icon-warning.png");
+    background-color: rgba(255, 46, 46, 0.7);
+}
+.pass { 
+    background-image: url("../IMG/tick.png");
+}
+.fail, .pass, .error {
+    background-repeat: no-repeat; 
+    background-position: 95% center;
+}

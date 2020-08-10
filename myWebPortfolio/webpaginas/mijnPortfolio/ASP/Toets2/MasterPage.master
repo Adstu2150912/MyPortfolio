@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<!--
+
+Opdracht:       Toets ASP Periode 4
+Auteur:         <Adam Oubelkas>
+Aanmaakdatum:   <12-6-2017 + 13:18>
+Bestandsnaam:   <MasterPage.master>
+    
+-->
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <header>
+                <h2>Pretparken en achtbanen in Nederland</h2>
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Overzicht.aspx" Text="Overzicht" Value="Overzicht"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Records.aspx" Text="Records" Value="Records"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <br />
+            </header>
+            <section>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer>
+
+            </footer>
+        
+    </div>
+    </form>
+</body>
+</html>

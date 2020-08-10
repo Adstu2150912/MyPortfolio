@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Highscores</title>
+
+    <link link rel="stylesheet" href="../assets/css/style.css" media="all">
+    <script src="../assets/js/angular.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div ng-app="MyHighscoresApp">
+            <img src="../assets/images/user.jpg">
+            <div ng-controller="userController">
+                <h3 ng-bind="username">-USERNAME-
+                </h3>
+                <p ng-bind="birthdate">
+                    -GEBOORTEDATUM-
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div id="wrapper" ng-controller="highscoreController">
+        <h1 ng-show="statusHighscore">
+            <!-- Deze H1 dient te verdwijnen zodra er een highscore geplaatst is -->
+            Er zijn nog geen highscores geplaatst!
+        </h1>
+
+        <ul>
+            <!-- Hier dienen de LI items van de highscores te komen -->
+            <li ng-repeat="x in highscores">{{x}}</li>
+        </ul>
+
+        <input type="text" placeholder="Nieuwe highscore" ng-model="newHighscore">
+        <button ng-click="addHighscore()">Opslaan</button>
+    </div>
+
+    <!--Voeg app.js aan dit bestand toe-->
+    <script src="../MyHighscoresApp.js"></script>
+    <!--Voeg alle Angular controllers aan dit bestand toe-->
+    <script src="../controllers/highscoreController.js"></script>
+    <script src="../controllers/userController.js"></script>
+</body>
+</html>

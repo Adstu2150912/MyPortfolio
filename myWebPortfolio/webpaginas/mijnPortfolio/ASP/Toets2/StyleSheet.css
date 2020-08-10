@@ -1,0 +1,28 @@
+﻿body {
+    margin: 0;
+}
+
+header {
+    background-color: #ff0000;
+    height: 15%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+section {
+    background-color: #dbd9d9;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+}
+
+footer {
+    background-color: #0026ff;
+    height: 5%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
