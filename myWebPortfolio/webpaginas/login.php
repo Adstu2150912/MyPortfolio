@@ -71,9 +71,9 @@ Bestandsnaam:   <login.php>
             <div id="main">
                 <form id="formulier" method="post" action="login.php">
                     <label>Wachtwoord </label><input type="password" value="" name="wachtwoord"> <!--echo isWachtwoord($_SESSION['wachtwoord']);--> 
-                        <input type="submit" name="verzend" value="verzend">
-                            </form>
-                            <p id="infoPanel"><?php echo $errorMsg ?></p>               
+                    <input type="submit" name="verzend" value="verzend">
+                 </form>
+                <p id="infoPanel"><?php echo $errorMsg ?></p>               
             </div>
         </section>
         <footer>

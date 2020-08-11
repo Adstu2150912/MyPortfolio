@@ -274,52 +274,56 @@ section {
 	right: 0;
 }
 
-#kolom1 {
-		  background-color: #A5A5A5;
-          color: white;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/5);
-  	}
+.kolom1 {
+	background-color: #A5A5A5;
+    color: white;
+	float: left;
+	margin: 0px;
+}
 
-#kolom2 {
-		  background-color: #7F7F7F;
-          color: white;
-		  float: left;
-		  width: calc(100%/5);
-		  height: 30px;
-		  margin: 0px;
-  	}
+.kolom2 {
+	background-color: #7F7F7F;
+    color: white;
+	float: left;
+	margin: 0px;
+}
 
-#kolom3 {
-		  background-color: black;
-          color: white;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/5);	  
-  	}
-#kolom4 {
-		  background-color: #A5A5A5;
-          color: white;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/5);	  
-  	}
-#kolom5 {
-		  background-color: #7F7F7F;
-          color: white;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/5);	  
-  	}
+.kolom3 {
+	background-color: black;
+    color: white;
+	float: left;
+	margin: 0px;
+}
+.kolom4 {
+	background-color: #A5A5A5;
+    color: white;
+	float: left;
+	margin: 0px;
+}
+.kolom5 {
+	background-color: #7F7F7F;
+    color: white;
+	float: left;
+	margin: 0px;
+}
 
-#legenda > * {
+.kolomA {
     padding: 10px 0;
+    height: 30px;
     text-align: center;
+}
+
+.kolomB {
+    padding: 10px 0;
+    height: 100vh;
+    text-align: center;
+}
+
+.ThreeColumnWidth {
+    width: calc(100%/3);
+}
+
+.FiveColumnWidth {
     width: calc(100%/5);
 }
 
@@ -347,10 +351,4 @@ section > #main {
     display: inline-block;
     width: 0%;
     height: 0vh;
-}
-
-#main > #gegevens > .kolom456 {
-    width: calc(100%/5);
-    height: 100vh;
-    text-align: center;
 }

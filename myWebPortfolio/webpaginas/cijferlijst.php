@@ -25,6 +25,7 @@
                 $('header > h1').empty('*');
                 $('header > h1').css('display', 'none');
                 $('header > h1').append("Dit is mijn volledig cijferlijst").fadeIn(1000);
+				$('section > #main').animate({ width: "80%", height: "100vh" }, 900);
             });
         </script>
     </head>
@@ -52,12 +53,12 @@
         <section>         
             <div id="main">
                 <div id="legenda">
-					<p id="kolom1">Vakken</p>
-					<p id="kolom2">Periodecijfers</p>
-					<p id="kolom3">Gemiddeldes</p>
+					<p class="kolomA kolom1 ThreeColumnWidth">Vakken</p>
+					<p class="kolomA kolom2 ThreeColumnWidth">Periodecijfers</p>
+					<p class="kolomA kolom3 ThreeColumnWidth">Gemiddeldes</p>
 				</div>
 				<div id="gegevens">
-					<div id="kolom4" class="kolom456">
+					<div class="kolomB kolom1 ThreeColumnWidth">
 						<p>HTML/CSS</p>
 						<p>JavaScript/JQuery</p>
 						<p>PHP</p>
@@ -72,7 +73,7 @@
 						<p>Computertekenen (Let op! Hoogste haalbare cijfer = 7)</p>
 						<p>Digitale Vaardigheden</p>
 					</div>
-					<div id="kolom5" class="kolom456">
+					<div class="kolomB kolom2 ThreeColumnWidth">
 						<p>8.4 - 7.5</p>
 						<p>9.0 - 8.5 - 8.9</p>
 						<p>7.0 - 6.8 - 8.2</p>
@@ -87,7 +88,7 @@
 						<p>7.0 - 7.0 - 7.0</p>
 						<p>7.5 - 7.2 - 8.0</p>
 					</div>
-					<div id="kolom6" class="kolom456">
+					<div class="kolomB kolom3 ThreeColumnWidth">
 						<p>8.0</p>
 						<p>8.8</p>
 						<p>7.3</p>

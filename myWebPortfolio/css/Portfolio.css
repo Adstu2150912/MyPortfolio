@@ -260,53 +260,46 @@ section {
 	right: 0;
 }
 
-#kolom1 {
-		  background-color: #ffd629;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/3);
+.kolom1 {
+    background-color: #ffd629;
+    float: left;
 }
 
-#kolom2 
-{
-		  background-color: #FEE599;
-		  float: left;
-		  width: calc(100%/3);
-		  height: 30px;
-		  margin: 0px;
+.kolom2 {
+    background-color: #FEE599;
+    float: left;
 }
 
-#kolom3 
-{
-		  background-color: #e8ba2e;
-		  float: left;
-		  height: 30px;
-		  margin: 0px;
-		  width: calc(100%/3);	  
-
+.kolom3 {
+    background-color: #e8ba2e;
+    float: left;
 }
 
-.kolom456 
-{
-        bottom: 100px;
-}
 
-#legenda > *
-{
+.kolomA {
     padding: 10px 0;
+    height: 30px;
+    margin: 0;
     text-align: center;
+}
+
+.kolomB {
+    padding: 10px 0;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.ThreeColumnWidth {
     width: calc(100%/3);
 }
 
 #optie {
-    top: 7.1%;
     padding: 0.67% 0;
     display: block;
     background-color: #FFF2CC;
     width: 100%;
-    margin: 10px 0 0 0;
-    position: absolute;
+    margin: 0 0 0 0;
 }
 
 #optie > p 
@@ -314,6 +307,14 @@ section {
     text-align: center;
     margin: 0;
     display: block; 
+}
+
+#legenda {
+    margin: 0;
+}
+
+#gegevens {
+    margin: 0;
 }
 
 
@@ -345,11 +346,6 @@ footer
     display: inline-block;
     width: 0%;
     height: 0vh;
-}
-
-#main > #gegevens > .kolom456 {
-    height: 100vh;
-    text-align: center;
 }
 
 #main > #gegevens > .kolom456 > a {

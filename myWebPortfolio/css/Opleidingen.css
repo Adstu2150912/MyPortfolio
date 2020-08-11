@@ -283,59 +283,39 @@ section {
 	width: 100%;
 }
 
-#kolom1 {
-        background-color: #9DBB61;
-        float: left;
-        height: 30px;
-        margin: 0px;
-        width: calc(100%/3);
-}
-
-#kolom2 {
-    background-color: #C4D6A0;
-    float: left;
-    height: 30px;
-    margin: 0px;
-    width: calc(100%/3);
-}
-
-#kolom3 {
-    background-color: #789440;
-    float: left;
-    height: 30px;
-    margin: 0px;
-    width: calc(100%/3);
-}
-
-#kolom4 {
+.kolom1 {
     background-color: #9DBB61;
     float: left;
-    height: 30px;
     margin: 0px;
-    width: calc(100%/3);
 }
 
-#kolom5 {
+.kolom2 {
     background-color: #C4D6A0;
     float: left;
-    height: 30px;
     margin: 0px;
-    width: calc(100%/3);
 }
 
-#kolom6 {
+.kolom3 {
     background-color: #789440;
     float: left;
-    height: 30px;
     margin: 0px;
-    width: calc(100%/3);
 }
 
-#legenda > *{
-    text-align: center;
-    width: calc(100%/3);
-    height: 50vh;
+
+.kolomA {
     padding: 10px 0;
+    height: 30px;
+    text-align: center;
+}
+
+.kolomB {
+    padding: 10px 0;
+    height: 100vh;
+    text-align: center;
+}
+
+.ThreeColumnWidth {
+    width: calc(100%/3);
 }
 
 #optie  {
@@ -343,13 +323,11 @@ section {
     background-color: #EBF1DF; 
 	width: 100%;	
     */
-    top: 3.3%;
     background-color: #82AC2D; 
 	width: 100%;
     display: block;
     padding: 0.72% 0;
     margin: 10px 0 0 0;
-    position: absolute;
 }
 
 #optie > p {
@@ -403,13 +381,6 @@ footer {
     height: 0vh;
     margin-top: 91px;
     display: inline-block;
-}
-
-#main > #gegevens > .kolom456{
-    width: calc(100%/3);
-    height: 100vh;
-    text-align: center;
-    bottom: 100px;
 }
 
 #main > #gegevens > .kolom456 > p {

@@ -16,6 +16,7 @@ body {
 }
 
 @media only screen and (orientation: landscape){
+
     header {
         width: 80%;
         background-color: #DBEEF3;
@@ -262,19 +263,19 @@ section > #main {
 }
 
 #kolom1 {
-		  background-color: #F9C499;
-		  float: left;
-  	}
+	background-color: #F9C499;
+	float: left;
+}
 
 #kolom2 {
-		  background-color: #fab091;
-		  float: left;
-  	}
+	background-color: #fab091;
+	float: left;
+}
 
 #kolom3 {
-		  background-color: #f6bf94;
-		  float: left;
-  	}
+	background-color: #f6bf94;
+	float: left;
+}
 
 #legenda {
     margin: 0;
