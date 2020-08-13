@@ -420,8 +420,8 @@ nav ul {
     list-style-type: none;
 }*/
 
-/*css opmaak voor opdracht 130*/
-/*table {
+/*onderstaande is css opmaak voor opdracht 130*/
+table {
     border-collapse: collapse;
     border: 2px solid black;
     font-family: Tahoma;
@@ -449,16 +449,16 @@ tbody td:first-child {
     font-weight: bold;
     border: 2px solid black;
     font-size: 24px;
-}*/
+}
 
-/*.schoppen {
+.schoppen {
     background-position-x: -79px;
 }
 
 .twee {
     background-position-y: -369px;
 }
-*/
+
 #wrapper  input {
     border: none;
     display: block;

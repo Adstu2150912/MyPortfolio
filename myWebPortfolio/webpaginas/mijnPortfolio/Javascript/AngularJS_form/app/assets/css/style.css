@@ -1,3 +1,23 @@
+#userInfoPanel {
+    border: dotted black 1px;
+    margin: 10px;
+    padding: 10px;
+}
+#userInfoPanel div img {
+    border-radius: 50%;
+    margin: 10px;
+}
+#userInfoPanel div h3 {
+    margin-top: 5px;
+}
+#userInfoPanel div {
+    float: left;
+    margin: 10px;
+}
+#userInfoPanel div span {
+    font-style: italic;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -7,12 +27,12 @@ body {
 
 @font-face {
     font-family: ElliotSans-Regular;
-    src: url('../../../../../../font/ElliotSans-Regular.ttf');
+    src: url('../../../../../../../font/ElliotSans-Regular.ttf');
 }
 
 @font-face {
     font-family: "Rounded Elegance";
-    src: url('../../../../../../font/Rounded_Elegance.ttf');
+    src: url('../../../../../../../font/Rounded_Elegance.ttf');
 }
 
 @media only screen and (orientation: landscape) {
@@ -21,13 +41,13 @@ body {
         width: 80%;
     }
 
-        header > h1 {
-            text-align: center;
-            padding: 1% 4%;
-            height: 100%;
-            font-family: "Rounded Elegance";
-            font-size: 24px;
-        }
+    header > h1 {
+        text-align: center;
+        padding: 1% 4%;
+        height: 100%;
+        font-family: "Rounded Elegance";
+        font-size: 24px;
+    }
 
     nav {
         background-color: #205867;
@@ -45,33 +65,12 @@ body {
         height: 100vh;
     }
 
-        #main > p {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            right: 30%;
-            text-align: center;
-        }
-
     nav > h3 {
         width: 100%;
     }
 
     nav ul a {
         padding: 10px 75px;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    section > #main > div {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        right: 26%;
-        bottom: 61%;
-        width: 25%;
     }
 }
 
@@ -112,19 +111,11 @@ body {
     }
 
     #main {
+        margin-left: 0;
         width: 100%;
         position: absolute;
-        height: 77%;
-        top: 91px;
-    }
-
-    #main > p {
-        padding: 10%;
-        display: block;
-        position: absolute;
-        left: 20%;
-        top: -7%;
-        right: 10%;
+        height: 81%;
+        background-color: #A3E1FF;
     }
 
     nav > h3 {
@@ -148,14 +139,6 @@ body {
         background-color: #205867;
         height: 100%;
     }
-
-    section > #main > div {
-        position: absolute;
-        top: 5%;
-        left: 25%;
-        right: 18%;
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -175,7 +158,6 @@ header {
     position: fixed;
     height: 91px;
     top: 0;
-    z-index: 1;
 }
 
 nav > h3 {
@@ -274,41 +256,48 @@ nav ul a
 }
 
 section {
-    background-color: #fff;
-    margin: 0;
+    background-color: #398EB9;
+    margin: 0px;
 }
 
 footer {
-	background-color: #90d2e3;
-	text-align: center;
-	display: block;
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;	
-	margin: 0px;
+    background-color: #90d2e3;
+    text-align: center;
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    overflow: hidden;
     z-index: 2;
 }
 
-#main > * {
-    font-family: ElliotSans-Regular;
-    clear: both;
-    text-align: center;
-}
 
 #main {
-    padding: 0;
     font-family: trocchi, georgia, times, serif;
     overflow-y: scroll;
-    background-color: #A3E1FF;
-}
-
-input, button {
     display: block;
-    margin: 0 auto;
+    padding: 0;
+    background-color: #398EB9;
+    margin-top: 91px;
 }
 
-button {
-    border: none;
+#wrapper {
+    margin: 100px 87% 40px 13%;
+    color: white;
+    display: block;
+    min-height: 200px;
+    background-color: blue;
 }
 
+#wrapper{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#wrapper > ul 
+{
+    list-style-type: none;
+}
