@@ -17,23 +17,36 @@ public partial class _Default : System.Web.UI.Page
     
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
-        string gekozenAchtbaan = ddlAchtbaan.SelectedValue;
+        string achtbaanFilter = ddlAchtbaan.SelectedValue;
         string connectieString;
-        connectieString = @"Data Source=DESKTOP-5V08EHN\SQLEXPRESS2;";
+        string geselecteerdeAchtbaan;
+        string strSqlCommand = "";
+        switch (achtbaanFilter)
+        {
+            case "hoogste":
+            {
+                strSqlCommand = "SELECT TOP 1 naam FROM achtbaan ORDER BY hoogte DESC;";
+                break;
+            }
+            case "snelste":
+            {
+                strSqlCommand = "SELECT TOP 1 naam FROM achtbaan ORDER BY snelheid DESC;";
+                break;
+            }
+            case "langste":
+            {
+                strSqlCommand = "SELECT TOP 1 naam FROM achtbaan ORDER BY lengte DESC;";
+                break;
+            }
+        }  
+        connectieString = @"Data Source=DESKTOP-70HOQ1P;";
         connectieString += "Initial Catalog=achtbanen; Integrated Security=True";
         SqlConnection connectie = new SqlConnection(connectieString);
-        SqlCommand cmdAchtbaan = new SqlCommand("SELECT TOP 1 naam FROM achtbaan ORDER BY '" + gekozenAchtbaan + "' DESC;" , connectie);
+        SqlCommand cmdAchtbaan = new SqlCommand(strSqlCommand, connectie);
         connectie.Open();
-        string geselecteerdeAchtbaan = Convert.ToString(cmdAchtbaan.ExecuteScalar());
+        geselecteerdeAchtbaan = Convert.ToString(cmdAchtbaan.ExecuteScalar());
         connectie.Close();
-        switch (gekozenAchtbaan)
-        {
-            case "":
-                {
-                    lblAchtbaan.Text = geselecteerdeAchtbaan;
-                    break;
-                }
-        }
-       
+        lblAchtbaan.Text = geselecteerdeAchtbaan;
+
     }
 }
