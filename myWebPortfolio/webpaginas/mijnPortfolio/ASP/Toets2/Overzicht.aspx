@@ -33,7 +33,7 @@
 
     <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="achtbaanId" DataSourceID="SqlDataSource3" Height="50px" Width="125px">
         <Fields>
-            <asp:BoundField DataField="naam" HeaderText="naam" SortExpression="naam" />
+            <asp:BoundField DataField="naam" HeaderText="Naam attractie" SortExpression="naam" />
             <asp:BoundField DataField="lengte" HeaderText="lengte" SortExpression="lengte" />
             <asp:BoundField DataField="hoogte" HeaderText="hoogte" SortExpression="hoogte" />
             <asp:BoundField DataField="inversies" HeaderText="inversies" SortExpression="inversies" />
