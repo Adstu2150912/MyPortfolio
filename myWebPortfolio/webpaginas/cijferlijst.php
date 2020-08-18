@@ -34,7 +34,7 @@
             <h1></h1>
         </header>
 		<nav>
-			<h3><a href="../index.html">Portfolio website <br/> Adam Oubelkas</a></h3>
+			<h3><a href="../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
             <ul>
                 <li>
                     <a href="../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>

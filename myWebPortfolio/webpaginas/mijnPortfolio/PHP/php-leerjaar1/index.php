@@ -1,7 +1,7 @@
 <?php
   /*php-pagina met php functies*/
   DEFINE("LEVEL","./");
-  include('../scripts/functies.php');
+  include('../../../../scripts/functies.php');
   include('includes/functies.php');
   /*sessie erbij halen*/
   session_start();
@@ -41,19 +41,19 @@
         </header>
         <section>
             <nav>
-				<h3><a href="../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
+				<h3><a href="../../../../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
                 <ul>
                     <li>
-                        <a href="../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                        <a href="../../../Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
                     </li>
                     <li>
-                        <a href="../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                        <a href="../../../Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
                     </li>
                     <li>
-                        <a href="../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                        <a href="../../../Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
                     </li>
                     <li>
-                        <a href="../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                        <a href="../../../Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
                     </li>
                 </ul>
             </nav>

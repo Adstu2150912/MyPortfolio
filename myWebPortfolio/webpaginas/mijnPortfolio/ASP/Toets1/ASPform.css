@@ -21,13 +21,13 @@
         width: 80%;
     }
 
-        header > h1 {
-            text-align: center;
-            padding: 1% 4%;
-            height: 100%;
-            font-family: "Rounded Elegance";
-            font-size: 24px;
-        }
+    header > h1 {
+        text-align: center;
+        padding: 1% 4%;
+        height: 100%;
+        font-family: "Rounded Elegance";
+        font-size: 24px;
+    }
 
     nav {
         background-color: #205867;
@@ -45,13 +45,13 @@
         height: 100vh;
     }
 
-        #main > p {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            right: 30%;
-            text-align: center;
-        }
+    #main > p {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        right: 30%;
+        text-align: center;
+    }
 
     nav > h3 {
         width: 100%;
@@ -69,7 +69,6 @@
         margin-top: 15%;
         margin-left: 5%;
         margin-bottom: 10%;
-        width: 63%;
     }
 }
 
@@ -117,14 +116,14 @@
         overflow-x: scroll;
     }
 
-        #main > p {
-            padding: 10%;
-            display: block;
-            position: absolute;
-            left: 20%;
-            top: -7%;
-            right: 10%;
-        }
+    #main > p {
+        padding: 10%;
+        display: block;
+        position: absolute;
+        left: 20%;
+        top: -7%;
+        right: 10%;
+    }
 
     nav > h3 {
         width: 175%;

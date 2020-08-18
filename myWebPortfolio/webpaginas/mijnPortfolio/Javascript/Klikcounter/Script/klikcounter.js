@@ -12,7 +12,6 @@ function hide(){
 	document.getElementById('klikker2').style.visibility = "visible";
 	document.getElementById('klikker2').innerHTML = "Klik hier!";
 	ronde++;
-// De code binnen de function wordt pas na 3 seconden uitgevoerd
 	setTimeout(function () {
 		// Deze code wordt pas na 5000 milliseconden uitgevoerd
 		alert("Tijd is om, 5 seconden zijn voorbij!");
