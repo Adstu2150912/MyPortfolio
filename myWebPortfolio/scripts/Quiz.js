@@ -35,43 +35,69 @@ $(document).ready(function () {
         //Als de gebruiker de spelregels begrijpt, kan de Quiz beginnen door onderstaande knop te laten klikken
         $('#spelregels > input').click(function () {
             $('#spelregels').remove();
-            ranNum = Math.floor((Math.random() * vragen.length) + -1);
-            $('form[name="quizForm"] > h3').append(vragen = vragen[ranNum].vraag);
-            for (i = 0; i < vragen[ranNum].length; i++) {
-                $('form[name="quizForm"] > #optie' + ranNum).after(vragen = vragen[ranNum][i]);
-            }
-            vragen.splice(ranNum, 1);
-            $('form[name="quizForm"]').fadeIn(800);
+            $('input[name="meerkeuzevraag"]').click()
         });
     });
 
     //Als een vraag uit een Quiz is beantwoord, verwijs de gebruiker dan naar de volgende vraag
     //Dit gaat net zo lang door totdat alle vragen zijn beantwoord of de tijd voorbij
-    $('input[name="meerkeuzevraag"]').change(function () {
+    $('input[name="meerkeuzevraag"]').click(function () {
         //Haal de waarde van de geselecteerde antwoorde op 
-        document.querySelector('input[name="meerkeuzevraag"]:checked').value;
+        var gekozenOptie = $('input[name="meerkeuzevraag"]:checked').val();
+        //Hou hieronder het aantal dat goed beantwoord is 
+        var aantalVragenGoed = 0;
 
         //Maak alvast heel het formulier leeg ter voorbereiding van de eventuele volgende vraag
         $('form[name="quizForm"] > h3').empty();
 
-        for (i = 0; i < vragen[ranNum].length; i++) {
-            $('form[name="quizForm"] > #optie' + ranNum).empty();
+        for (var i = 0; i < 4; i++) {
+            $('form[name="quizForm"] > #optie' + i).empty();
         }
 
         //Als nog niet alle vragen door de gebruiker zijn beantwoord, laat de quiz dan doorgaan
-        //Zo wel, dan is de quiz afgelopen en moet een totaaloverzicht van vragen, punten en score aan de gebruiker getoond worden
+        //Zo wel, dan is de quiz afgelopen en moet een overzicht met daarin de behaalde score aan de gebruiker getoond worden
         if (vragen.length > 0) {
-            ranNum = Math.floor((Math.random() * vragen.length) + -1);
-            $('form[name="quizForm"] > h3').append(vragen = vragen[ranNum].vraag);
-            for (i = 0; i < vragen[ranNum].length; i++) {
-                $('form[name="quizForm"] > #optie' + ranNum).after(vragen = vragen[ranNum][i]);
+            ranNum = Math.floor((Math.random() * Math.floor(vragen.length)));
+
+            if (gekozenOptie == vragen[ranNum].antwoord) {
+                huidigeScore += 10;
+                aantalVragenGoed += 1;
             }
+            else {
+                huidigeScore -= 3;
+            }
+
+            $('form[name="quizForm"] > h3').append(vragen[ranNum].vraag);
+            $('form[name="quizForm"] > #optie1').val(vragen[ranNum].optie1);
+            $('form[name="quizForm"] > #optie2').val(vragen[ranNum].optie2);
+            $('form[name="quizForm"] > #optie3').val(vragen[ranNum].optie3);
+            $('form[name="quizForm"] > #optie4').val(vragen[ranNum].optie4);
+            $('form[name="quizForm"] > #lblOptie1').text(vragen[ranNum].optie1);
+            $('form[name="quizForm"] > #lblOptie2').text(vragen[ranNum].optie2);
+            $('form[name="quizForm"] > #lblOptie3').text(vragen[ranNum].optie3);
+            $('form[name="quizForm"] > #lblOptie4').text(vragen[ranNum].optie4);
+
             vragen.splice(ranNum, 1);
             $('form[name="quizForm"]').fadeIn(800);
+
+            //Als meer dan 5 seconden zijn geweest voordat de gebruiker antwoord heeft gegeven, 
+            // dan moet de volgende vraag getoond worden.
+            setTimeout(function () { $('input[name="meerkeuzevraag"]').click()}, 5000);
         }
         else
         {
+            $('header > h1').empty();
+            $('header > h1').css('display', 'none');
+            $('header > h1').append("De Quiz is afgelopen.").fadeIn(1000);
+            $('form[name="quizForm"]').remove();
+            $('#main > #resultaten').append('<h1>Dit zijn de resultaten:</h1>' + '<p>Er zijn ' + aantalVragenGoed +' vragen juist beantwoord.</p>' +
+            '<p>U heeft ' + huidigeScore + ' punten in totaal verzameld over heel de Quiz.</p>' +
+            '<p>U kunt de Quiz opnieuw spelen!</p> <input type="button" value="Ga verder">').fadeIn(1000).css('text-align', 'center');
         }
+    });
+
+    $('#resultaten > input').click(function () {
+        location.reload(true);
     });
 
 });

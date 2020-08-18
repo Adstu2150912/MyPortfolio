@@ -305,7 +305,7 @@ form[name= "proloog"] {
     position: absolute;
 }
 
-form[name="Quiz"] {
+form[name="quizForm"] {
     margin-left: 40%;
     margin-right: 25%;
     margin-top: 20%;
