@@ -109,7 +109,6 @@ body {
 
     #main {
         margin-left: 0;
-        position: absolute;
         overflow-y: scroll;
         font-size: 14px;
     }
@@ -280,7 +279,6 @@ nav ul a
 section {
     background-color: #fff;
     margin: 0px;
-	right: 0;
 }
 
 
