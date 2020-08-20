@@ -11,15 +11,17 @@
             $scope.statusHighscore = true;
         }
     },
-    $scope.removeHighscore = function () {
+    $scope.removeHighscore = function () {       
         if ($scope.highscores.length > 0) {
-            $scope.highscores -= $scope.highscores[$scope.highscores.length - 1];
+            $scope.highscores -= $scope.selected;
             if ($scope.highscores.length <= 0) {
                 $scope.statusHighscore = true;
             }
-        }
-        else {
-            $scope.statusHighscore = true;
-        }                 
+        }	                
     };
+    $scope.selectHighscore = function (selectedHighScore) {
+        $scope.selected = selectedHighScore;
+    }
+
+
 });

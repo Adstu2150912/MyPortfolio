@@ -58,7 +58,7 @@
 
             <ul>
                 <!-- Hier dienen de LI items van de highscores te komen -->
-                <li ng-repeat="x in highscores track by $index">{{x}}</li>
+                <li ng-repeat="x in highscores track by $index" ng-click="selectHighscore(x)" ng-class="{active : isSelected(x)}">{{x}}</li>
             </ul>
 
             <input type="text" placeholder="Nieuwe highscore" ng-model="newHighscore">
