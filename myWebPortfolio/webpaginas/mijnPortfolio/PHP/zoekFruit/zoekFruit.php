@@ -72,14 +72,16 @@ include LEVEL . "includes/functies.php";
 							//Als er een invoer is verstuurd via het formulier, haal dan die waarde op via de onderstaande GET parameter
 							if(isset($_GET['zoekFruit'])){
 								//Als invoer gelijk is aan één van de keys in array $aFruits, print key met bijhorende value
-								if(array_key_exists($_GET['zoekFruit'], $aFruits)){
+								if(array_key_exists($_GET['zoekFruit'], $aFruits) && $_GET['zoekFruit'] == 'appel'){
 									echo "Bedoelt uw: " . "<a href=" . $aFruits[$_GET['zoekFruit']] . ">" . $_GET['zoekFruit'] . "</a> ?";
-									//array_flip($aFruits);
+								}
+								else if(array_key_exists($_GET['zoekFruit'], $aFruits))
+								{
+									echo $_GET['zoekFruit'] . " is " . $aFruits[$_GET['zoekFruit']];
 								}
 								//Anders is er geen overeenkomst tussen de invoer en één van de keys
 								else{
 									echo $_GET['zoekFruit'] . " bestaat niet! Typ uw gewenste fruit ALLEEN in kleine letters!";
-									//array_flip($aFruits);
 								}
 							}
 							?>
