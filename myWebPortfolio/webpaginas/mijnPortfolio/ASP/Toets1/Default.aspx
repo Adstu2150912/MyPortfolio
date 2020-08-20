@@ -80,8 +80,8 @@
     </nav>
     <section>
         <div id="main">
-               <div>
-                    <form id="form1" runat="server">
+            <div>
+                <form id="form1" runat="server">
                     <div>
                     <asp:Label ID="lblTitel" runat="server" Text="
                     &lt;h1 id=&quot;h1Inloggen&quot;&gt;Inloggen bij Netwerk
@@ -135,7 +135,7 @@
                                     </td>
                                     <td>
                                         <asp:RegularExpressionValidator ID="revVoornaam" runat="server" ControlToValidate="txtVoornaam" Display="Dynamic" ErrorMessage="Voornaam is ongeldig!" ValidationExpression="^[a-zA-Z&quot;-'\s]{2,20}$"></asp:RegularExpressionValidator>
-                                        &nbsp;<br />
+                                        &nbsp;<br/>
                                         <asp:RequiredFieldValidator ID="rfvVoornaam0" runat="server" ControlToValidate="txtVoornaam" Display="Dynamic" ErrorMessage="Dit is verplicht!"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
@@ -184,8 +184,8 @@
                                         <asp:TextBox ID="txtEmailadres" runat="server" Width="267px"></asp:TextBox>
                                     </td>
                                     <td><asp:RequiredFieldValidator ID="rfvEmailadres" runat="server" ControlToValidate="txtEmailadres" Display="Dynamic" ErrorMessage="Dit is verplicht!"></asp:RequiredFieldValidator>
-                                        <br />
-                                        <asp:RegularExpressionValidator ID="revEmailadres0" runat="server" ControlToValidate="txtEmailadres" Display="Dynamic" ErrorMessage="E-mailadres is ongeldig!" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)"></asp:RegularExpressionValidator>
+                                        <br/>
+                                        <asp:RegularExpressionValidator ID="revEmailadres0" runat="server" ControlToValidate="txtEmailadres" Display="Dynamic" ErrorMessage="E-mailadres is ongeldig!" ValidationExpression="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"></asp:RegularExpressionValidator>
                                 </td>
                                 </tr>
                                 <tr>
@@ -193,7 +193,7 @@
                                     <td class="auto-style10">
                                         <asp:TextBox ID="txtWachtwoordRegistratie" runat="server" TextMode="Password" Width="267px"></asp:TextBox>                                         
                                     </td>
-                                    <td>&nbsp;<br /> <asp:RequiredFieldValidator ID="rfvWachtwoordRegistratie" runat="server" Display="Dynamic" ErrorMessage="Dit is verplicht!" ControlToValidate="txtWachtwoordRegistratie"></asp:RequiredFieldValidator></td>
+                                    <td>&nbsp;<br/> <asp:RequiredFieldValidator ID="rfvWachtwoordRegistratie" runat="server" Display="Dynamic" ErrorMessage="Dit is verplicht!" ControlToValidate="txtWachtwoordRegistratie"></asp:RequiredFieldValidator></td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style17">Herhaal wachtwoord</td>
@@ -219,11 +219,11 @@
                                     </td>
                                 </tr>
                             </table>
-                        </asp:Panel>
-                    </div>
-                    </form>
+                    </asp:Panel>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </section>
 <footer>
     <p>&copy 2017 Adam Oubelkas <br/> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
