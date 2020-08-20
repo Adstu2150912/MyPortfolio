@@ -96,7 +96,7 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
 					foreach ($_SESSION['rapport'] as $key => $value){
 						//koppel sessievariabel $_SESSION['rapport'], met indexwaarde $_POST['vak'], aan $_POST['cijfer'];
 							if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false) {
-								echo "<tr><td>" . $_POST['vak'] . "</td>" . "<td>" . $_POST['cijfer'] . "</td></tr>";
+								echo "<tr><td>" . $_POST['vak'] . "</td>" . "<td>" . round($_POST['cijfer'], 2) . "</td></tr>";
 							}
 							else{
 								echo "<tr><td>" . $key . "</td>" . "<td>" . $value . "</td></tr>";
