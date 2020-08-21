@@ -9,44 +9,81 @@
 <?php
 DEFINE("LEVEL","../");
 include LEVEL . "includes/functies.php";
+//Als client hier terugkomt, 
+//maak dan voorgaande sessie leeg zodat client met een schone lei een rapport kan aanmaken
+
+$_SESSION = array(); 
+  
+if (ini_get("session.use_cookies")) { 
+    $params = session_get_cookie_params(); 
+    setcookie(session_name(), '', time() - 42000, 
+        $params["path"], $params["domain"], 
+        $params["secure"], $params["httponly"] 
+    ); 
+}
+
 session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
+	<title>
+        formulier voor invullen rapportgegevens
+    </title>
+    <link type="text/css" rel="stylesheet" href="SessieRapport.css">
     <meta charset="utf-8" />
+	<script src="../../../../../scripts/jquery-3.2.0.min.js"></script>
+	<script>
+            $(document).ready(function () {
+                $('header > h1').empty('*');
+                $('header > h1').css('display', 'none');
+                $('header > h1').append("Vul onderstaande rapport in van gewenste leerling").fadeIn(1000);
+			});
+	</script>
 </head>
 <body>
-<header><h1>ICT academie AO</h1></header>
-<nav><ul><?php printOpdrachten(); ?></ul></nav>
-<div id="wrapper">
-    <!--Gemaakt op 24 februari 2017 door Adam Oubelkas uit IO1E4-->
-    <!--Als dit formulier is ingevuld en op de submit knop gedrukt is,
-    wordt het verzonden naar 'opdracht141.php' waarin je de visuele weergave in kan zien-->
-    <form method="get" action="opdracht141.php">
-        <label>Naam: </label>
-        <input type="text" name="naam" value="">
-        <br>
-        <label>Klas: </label>
-        <input type="text" name="klas" value="">
-        <br>
-        <label>Leerlingnummer: </label>
-        <input type="text" name="leerlingnummer" value="">
-        <br>
-        <label>Vak:</label>
-        <select name='vak'>
-            <option value='PHP'>PHP</option>
-            <option value='javascript'>Javascript</option>
-            <option value='ASP'>ASP</option>
-            <option value='SQL'>SQL</option>
-        </select>
-        <br>
-        <label>Cijfer: </label>
-        <input type="number" name="cijfer" value="">
-        <br>
-        <input type="submit" name="verzend" value="Verzend">
-    </form>
-</div>
-</body>
+ <header>          
+     <h1></h1>
+        </header>
+		<nav>
+			<h3><a href="../../../../../index.html">Portfolio website <br> Adam Oubelkas</a></h3>
+                <ul>
+                    <li>
+                        <a href="../../../../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                    </li>
+                    <li>
+                        <a href="../../../../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                    </li>
+                    <li>
+                        <a href="../../../../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../../../../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                    </li>
+                </ul>
+            </nav>
+        <section>          
+            <div id="main">
+				<div>
+					<form method='post' action='Sessierapport.php'>
+						<label>Naam: </label><input name='naam' type='text' value=''>
+						<label>Klas: </label><input name='klas' type='text' value=''>
+						<label>Nummer: </label><input name='leerlingnummer' type='text' value=''>
+						<label>Vak:</label>
+						<select name='vak'>
+							<option value='PHP'>PHP</option>
+							<option value='Javascript'>Javascript</option>
+							<option value='ASP'>ASP</option>
+							<option value='SQL'>SQL</option>
+						</select>
+						<label>Cijfer: </label><input name='cijfer' type='number' value='5'>
+						<input type='submit' value='verzend' name='verzend'>
+					</form>
+				</div>
+         </div>
+        </section>
+        <footer>
+            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
+        </footer>
+    </body>
 </html>

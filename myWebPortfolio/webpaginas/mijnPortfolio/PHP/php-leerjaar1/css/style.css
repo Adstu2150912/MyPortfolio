@@ -426,11 +426,8 @@ table {
     border: 2px solid black;
     font-family: Tahoma;
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 40%;
-    right: 40%;
-
 }
 
 thead {
@@ -477,10 +474,14 @@ tbody td:first-child {
     top: 80px;
     min-height: 200px;
     background-color: blue;
+    text-align: center;
+    left: 40%;
+    padding: 0 5%;
 }
 
 #wrapper > ul 
 {
+    width: 65%;
     list-style-type: none;
 }
 

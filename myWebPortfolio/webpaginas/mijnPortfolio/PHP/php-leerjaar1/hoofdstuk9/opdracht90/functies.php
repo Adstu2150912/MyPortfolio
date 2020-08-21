@@ -39,10 +39,6 @@ function printGroet ($achternaam, $voornaam, $leeftijd) {
 		echo "He $voornaam, fijne $dagdeel he?";
 	}
 
-    
-
 }
-
-
 ?>
 

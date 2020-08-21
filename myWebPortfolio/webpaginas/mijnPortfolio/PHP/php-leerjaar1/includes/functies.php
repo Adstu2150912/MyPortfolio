@@ -133,5 +133,4 @@ function resetSpel() {
     $_SESSION['spel'] = array("schoppen" => array() , "klaveren" => array(), "ruiten" => array(), "harten" => array());
 }
 
-
 ?>

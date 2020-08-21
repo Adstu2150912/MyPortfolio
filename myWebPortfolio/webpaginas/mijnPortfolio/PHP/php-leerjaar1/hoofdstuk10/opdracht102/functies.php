@@ -1,5 +1,4 @@
 <?php
-
 function isPriem($getal){
 	
 	//tellen vanaf index 0
@@ -24,5 +23,3 @@ function isPriem($getal){
 		}
 }
 ?>
-
-

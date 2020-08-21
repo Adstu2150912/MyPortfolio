@@ -44,4 +44,3 @@ function berekenTotaal($subtotaal, $btwbedrag){
 	return $Totaal;
 }
 ?>
-
