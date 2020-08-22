@@ -32,9 +32,11 @@ include LEVEL . "includes/functies.php";
 	<title>
         simpele zoekmachine voor fruit
     </title>
-    <link type="text/css" rel="stylesheet" href="../css/zoekFruit.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
     <meta charset="utf-8" />
-	<script src="../../../../../scripts/jquery-3.2.0.min.js"></script>
+    <title>Opdrachten PHP periode 3</title>
+    <script src="../../../../../scripts/jquery-3.2.0.min.js"></script>
+    <script src="../../../../../scripts/Script.js"></script>
 	<script>
             $(document).ready(function () {
                 $('header > h1').empty('*');
@@ -68,7 +70,7 @@ include LEVEL . "includes/functies.php";
         <section>          
 			<div id="main">
 				<div>
-					<form method="get" action="zoekFruit.php">
+					<form method="get" action="opdracht170.php">
 						<label>Zoek fruit:</label>
 						<input type="text" name="zoekFruit" value="">
 						<br>

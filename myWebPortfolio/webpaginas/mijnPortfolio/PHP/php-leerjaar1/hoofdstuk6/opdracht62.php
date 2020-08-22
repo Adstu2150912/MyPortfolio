@@ -1,10 +1,10 @@
 <?php
 //php en html code gemaakt door Adam Oubelkas uit IO1E4
 
-//$getal = 13061997; // Neem je geboortedatum - 13 juni 1997 
+$getal = 13061997; // Neem je geboortedatum - 13 juni 1997 
 //echo $getal;
 //echo "<br>";
-//$leeftijd = 19; //Neem je leeftijd - 19 jaar
+$leeftijd = 23; //Neem je leeftijd - 23 jaar
 //echo $leeftijd;
 //echo "<br>";
 //$getal++; // $getal = 13061998
@@ -80,16 +80,17 @@
         <div id="wrapper">
           <h2>Opdracht 62</h2>
 			<!--//php en html code gemaakt door Adam Oubelkas uit IO1E4-->
-			<p>$getal is 13061997</p>
-			<p>$leeftijd = 19</p>
-			<p>$getal++ = 13061998</p>
-			<p>$getal /=$leeftijd = $getal / $leeftijd = 687473.57894737</p>
-			<p>$getal = ceil($getal) = 687474</p>
-			<p>$getal-- = 687473</p>
-			<p>$getal +=50 = 687523</p>
-			<p>$getal /= 3 = 229174.33333333</p>
-			<p>$getal = $getal % 15 = $getal rest 15 = 4</p>
-			<p></p>
+			<?php
+				echo "<p>getal is $getal</p>";
+				echo "<p>leeftijd = $leeftijd</p>";
+				echo "<p>++getal = " . ++$getal . "</p>";
+				echo "<p>getal /= leeftijd = " . ($getal / $leeftijd) . "</p>";
+				echo "<p>getal = " . ceil($getal) . "</p>";
+				echo "<p>--getal =" . --$getal . "</p>";
+				echo "<p>getal += 50 = " . ($getal += 50) . "</p>";
+				echo "<p>getal /= 3 = " . ($getal /= 3) . "</p>";
+				echo "<p>getal = getal % 15 = getal rest 15 = " . ($getal % 15) . "</p>";
+			?>
         </div>
       </div>
     </section>

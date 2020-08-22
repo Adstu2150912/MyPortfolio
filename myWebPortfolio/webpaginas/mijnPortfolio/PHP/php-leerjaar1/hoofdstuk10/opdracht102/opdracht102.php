@@ -50,8 +50,31 @@
 		  <?php
 			include('functies.php');
 
-			echo "De priemgetallen tot 20 zijn: ";
-			echo isPriem(7);
+			echo "De priemgetallen tot en met 23: " . "<br/><br/>";
+			echo isPriem(0) . "<br/>";
+			echo isPriem(1) . "<br/>";
+			echo isPriem(2) . "<br/>";
+			echo isPriem(3) . "<br/>";
+			echo isPriem(4) . "<br/>";
+			echo isPriem(5) . "<br/>";
+			echo isPriem(6) . "<br/>";
+			echo isPriem(7) . "<br/>";
+			echo isPriem(8) . "<br/>";
+			echo isPriem(9) . "<br/>";
+			echo isPriem(10) . "<br/>";
+			echo isPriem(11) . "<br/>";
+			echo isPriem(12) . "<br/>";
+			echo isPriem(13) . "<br/>";
+			echo isPriem(14) . "<br/>";
+			echo isPriem(15) . "<br/>";
+			echo isPriem(16) . "<br/>";
+			echo isPriem(17) . "<br/>";
+			echo isPriem(18) . "<br/>";
+			echo isPriem(19) . "<br/>";
+			echo isPriem(20) . "<br/>";
+			echo isPriem(21) . "<br/>";
+			echo isPriem(22) . "<br/>";
+			echo isPriem(23) . "<br/>";
 			?>
         </div>
       </div>

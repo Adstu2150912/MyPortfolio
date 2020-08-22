@@ -58,15 +58,15 @@
 
               // hier wordt niks verandert, dus alleen echo 
 
-              echo "Ik ben $naam.";
+              echo "Ik ben $naam." . "<br/><br/>";
 
               //Hier 
 
               if ($leeftijd > 25){
-                  echo "Ik ben best oud.";
+                  echo "Ik ben best oud." . "<br/><br/>";
               }
               else {
-                  echo "Ik ben best jong.";
+                  echo "Ik ben best jong." . "<br/><br/>";
               }
 
               if ($plaats == "Den Bosch"){

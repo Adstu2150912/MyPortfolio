@@ -77,26 +77,26 @@
 
               //initialisering van variabelen samen met strings 
 
-              echo "$collega6 (lengte $strlencollega6)";
+              echo "$collega6 (aantal karakters: $strlencollega6)";
               echo "<br>";
-              echo "$collega9 (lengte $strlencollega9)";
+              echo "$collega9 (aantal karakters: $strlencollega9)";
               echo "<br>";
-              echo "$collega10 (lengte $strlencollega10)";
+              echo "$collega10 (aantal karakters: $strlencollega10)";
               echo "<br>";
-              echo "$collega2 (lengte $strlencollega2)";
+              echo "$collega2 (aantal karakters: $strlencollega2)";
               echo "<br>";
-              echo "$collega4 (lengte $strlencollega4)";
+              echo "$collega4 (aantal karakters: $strlencollega4)";
               echo "<br>";
-              echo "$collega7 (lengte $strlencollega7)";
+              echo "$collega7 (aantal karakters: $strlencollega7)";
               echo "<br>";
-              echo "$collega8 (lengte $strlencollega8)";
+              echo "$collega8 (aantal karakters: $strlencollega8)";
               echo "<br>";
-              echo "$collega5 (lengte $strlencollega5 )";
+              echo "$collega5 (aantal karakters: $strlencollega5 )";
               echo "<br>";
-              echo "$collega3 (lengte $strlencollega3)";
+              echo "$collega3 (aantal karakters: $strlencollega3)";
               echo "<br>";
-              echo "$collega1 (lengte $strlencollega1)";
-				    ?>
+              echo "$collega1 (aantal karakters: $strlencollega1)";
+			?>
           </p>
         </div>
       </div>

@@ -12,13 +12,11 @@ $aOpdrachten = [
     ,array( "file" => "hoofdstuk2/opdracht20/opdracht20.php", "label" => "Opdracht 20")
     ,array( "file" => "hoofdstuk3/opdracht30/opdracht30.php", "label" => "Opdracht 30")
     ,array( "file" => "hoofdstuk4/opdracht40.php", "label" => "Opdracht 40")
-    ,array( "file" => "hoofdstuk4/opdracht41.php", "label" => "Opdracht 41")
-    ,array( "file" => "hoofdstuk4/opdracht42.php", "label" => "Opdracht 42")
-    ,array( "file" => "hoofdstuk5/opdracht50.php", "label" => "Opdracht 50")
-    ,array( "file" => "hoofdstuk5/opdracht51.php", "label" => "Opdracht 51")
-    ,array( "file" => "hoofdstuk6/opdracht61.php", "label" => "Opdracht 61")
+    ,array( "file" => "hoofdstuk5/opdracht50.php?naam=Jan&leeftijd=18", "label" => "Opdracht 50")
+    ,array( "file" => "hoofdstuk5/opdracht51.php?naam=Jan&leeftijd=18&plaats=Den Bosch", "label" => "Opdracht 51")
+    ,array( "file" => "hoofdstuk6/opdracht61.php?getal1=45&getal2=6", "label" => "Opdracht 61")
     ,array( "file" => "hoofdstuk6/opdracht62.php", "label" => "Opdracht 62")
-    ,array( "file" => "hoofdstuk7/opdracht71.php", "label" => "Opdracht 71")
+    ,array( "file" => "hoofdstuk7/opdracht71.php?verzekering=WA", "label" => "Opdracht 71")
     ,array( "file" => "hoofdstuk7/opdracht72.php", "label" => "Opdracht 72")
     ,array( "file" => "hoofdstuk8/opdracht81.php", "label" => "Opdracht 81")
     ,array( "file" => "hoofdstuk9/opdracht90/opdracht90.php", "label" => "Opdracht 90")
@@ -35,7 +33,7 @@ $aOpdrachten = [
     ,array( "file" => "hoofdstuk14/opdracht140.php", "label" => "Opdracht 140")
     ,array( "file" => "hoofdstuk14/opdracht141.php", "label" => "Opdracht 141")
     ,array( "file" => "hoofdstuk15/opdracht150.php", "label" => "Opdracht 150")
-    ,array( "file" => "hoofdstuk16/opdracht160.php", "label" => "Opdracht 160")
+    /*,array( "file" => "hoofdstuk16/opdracht160.php", "label" => "Opdracht 160")*/
     ,array( "file" => "hoofdstuk17/opdracht170.php", "label" => "Opdracht 170")
 ];
 

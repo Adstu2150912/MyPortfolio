@@ -61,11 +61,11 @@
               */
 
               $dit = "dit";
-
-              echo strpos ($sZin, "$dit"). "<br>";
-              echo strrpos ($sZin, "$dit"). "<br>";
-              echo stripos ($sZin, "$dit"). "<br>";
-              echo strripos ($sZin, "$dit"). "<br>";
+			  echo $sZin . "<br/><br/>";
+              echo "eerst gevonden positie 'dit':" . strpos($sZin, "$dit"). "<br/><br/>";
+              echo "laatst gevonden positie 'dit':" . strrpos($sZin, "$dit"). "<br/><br/>";
+              echo "eerst gevonden positie 'dit' (hoofdlettergevoelig):" . stripos($sZin, "$dit"). "<br/><br/>";
+              echo "laatst gevonden positie 'dit' (hoofdlettergevoelig):" . strripos($sZin, "$dit"). "<br/><br/>";
 				    ?>
           </p>
         </div>

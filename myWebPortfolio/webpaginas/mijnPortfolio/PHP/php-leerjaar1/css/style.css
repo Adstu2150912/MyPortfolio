@@ -66,12 +66,12 @@ body {
     }
 
     section > #main > form {
-        position: absolute;
+       /*position: absolute;
         top: 60%;
         left: 50%;
         right: 26%;
         bottom: 61%;
-        width: 25%;
+        width: 25%;*/
     }
 }
 
@@ -154,13 +154,12 @@ body {
     }
 
     section > #main > form {
-        position: absolute;
+        /*position: absolute;
         top: 45%;
         left: 20%;
         right: 18%;
-        width: 50%;
+        width: 50%;*/
     }
-
 }
 
 @media screen and (max-width: 1400px) {
@@ -458,10 +457,10 @@ tbody td:first-child {
 
 #wrapper  input {
     border: none;
-    display: block;
+    /*display: block;*/
     color: white;
     background-color: #000;
-    margin: 1vh 0;
+    /*margin: 1vh 0;*/
     position: relative;
 }
 #wrapper {
@@ -541,7 +540,7 @@ div.game{
 }
 
 form {
-    position: absolute;
+    /*position: absolute;
     left: 40%;
-    right: 40%;
+    right: 40%;*/
 }

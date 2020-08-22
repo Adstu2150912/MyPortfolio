@@ -41,9 +41,10 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
 	<title>
         rapportoverzicht
     </title>
-   <link type="text/css" rel="stylesheet" href="SessieRapport.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
     <meta charset="utf-8" />
 	<script src="../../../../../scripts/jquery-3.2.0.min.js"></script>
+	<script src="../../../../../scripts/Script.js"></script>
 	<script>
             $(document).ready(function () {
                 $('header > h1').empty('*');
@@ -59,23 +60,23 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
 <header>          
      <h1></h1>
         </header>
-		<nav>
-			<h3><a href="../../../../../index.html">Portfolio website <br> Adam Oubelkas</a></h3>
-                <ul>
-                    <li>
-                        <a href="../../../../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
-                    </li>
-                    <li>
-                        <a href="../../../../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
-                    </li>
-                    <li>
-                        <a href="../../../../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="../../../../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav>
+			<h3><a href="../../../../../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
+            <ul>
+                <li>
+                    <a href="../../../../Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                </li>
+                <li>
+                    <a href="../../../../Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                </li>
+                <li>
+                    <a href="../../../../Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                </li>
+                <li>
+                    <a href="../../../../Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                </li>
+            </ul>
+        </nav>
         <section>          
             <div id="main">
 				<div>
@@ -129,7 +130,7 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
 					</tr>
 					</tbody>
 				</table>
-				<form method="post" action="Sessierapport.php">
+				<form method="post" action="opdracht141.php">
 					<?php
 					`   `
 					?>
