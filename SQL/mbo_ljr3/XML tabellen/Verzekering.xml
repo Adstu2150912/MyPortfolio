@@ -1,0 +1,32 @@
+﻿<Verzekeringen>
+  <Verzekering>
+    <verzekeringID>1</verzekeringID>
+    <serienummer>524672</serienummer>
+    <aanschafprijs>10</aanschafprijs>
+    <aanschafdatum>1973-03-05</aanschafdatum>
+    <afschrijvingsdatum>1973-09-05</afschrijvingsdatum>
+    <leverancier>L1</leverancier>
+    <verzekerd>1</verzekerd>
+    <verzekeringswaarde>5</verzekeringswaarde>
+  </Verzekering>
+  <Verzekering>
+    <verzekeringID>2</verzekeringID>
+    <serienummer>873564</serienummer>
+    <aanschafprijs>20</aanschafprijs>
+    <aanschafdatum>1974-03-06</aanschafdatum>
+    <afschrijvingsdatum>1974-09-06</afschrijvingsdatum>
+    <leverancier>L2</leverancier>
+    <verzekerd>0</verzekerd>
+    <verzekeringswaarde>10</verzekeringswaarde>
+  </Verzekering>
+  <Verzekering>
+    <verzekeringID>3</verzekeringID>
+    <serienummer>123428</serienummer>
+    <aanschafprijs>30</aanschafprijs>
+    <aanschafdatum>1975-03-07</aanschafdatum>
+    <afschrijvingsdatum>1975-09-07</afschrijvingsdatum>
+    <leverancier>L3</leverancier>
+    <verzekerd>1</verzekerd>
+    <verzekeringswaarde>20</verzekeringswaarde>
+  </Verzekering>
+</Verzekeringen>

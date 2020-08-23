@@ -1,0 +1,35 @@
+﻿<Evenementen>
+  <Evenement>
+    <evenementID>1</evenementID>
+    <evenementnaam>E1</evenementnaam>
+    <evenementtype>Repetitie</evenementtype>
+    <begindatum>2018-04-20</begindatum>
+    <einddatum>2018-04-21</einddatum>
+    <starttijd>10:00</starttijd>
+    <eindtijd>11:00</eindtijd>
+    <locatie>LO1</locatie>
+    <beschrijving>B1</beschrijving>
+  </Evenement>
+  <Evenement>
+    <evenementID>2</evenementID>
+    <evenementnaam>E2</evenementnaam>
+    <evenementtype>Extra Repetitie</evenementtype>
+    <begindatum>2018-07-17</begindatum>
+    <einddatum>2018-07-18</einddatum>
+    <starttijd>11:00</starttijd>
+    <eindtijd>12:00</eindtijd>
+    <locatie>LO2</locatie>
+    <beschrijving>B2</beschrijving>
+  </Evenement>
+  <Evenement>
+    <evenementID>3</evenementID>
+    <evenementnaam>E3</evenementnaam>
+    <evenementtype>Concert</evenementtype>
+    <begindatum>2018-11-04</begindatum>
+    <einddatum>2018-11-05</einddatum>
+    <starttijd>12:00</starttijd>
+    <eindtijd>13:00</eindtijd>
+    <locatie>LO3</locatie>
+    <beschrijving>B3</beschrijving>
+  </Evenement>
+</Evenementen>
