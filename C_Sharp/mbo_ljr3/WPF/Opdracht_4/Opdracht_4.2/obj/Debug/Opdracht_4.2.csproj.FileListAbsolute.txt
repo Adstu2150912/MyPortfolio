@@ -1,0 +1,15 @@
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\bin\Debug\Opdracht_4.2.exe.config
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\bin\Debug\Opdracht_4.2.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\bin\Debug\Opdracht_4.2.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.csprojAssemblyReference.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\MainWindow.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\App.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2_MarkupCompile.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2_MarkupCompile.lref
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\MainWindow.baml
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.g.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4._2.Properties.Resources.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.csproj.GenerateResource.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.2\obj\Debug\Opdracht_4.2.pdb
