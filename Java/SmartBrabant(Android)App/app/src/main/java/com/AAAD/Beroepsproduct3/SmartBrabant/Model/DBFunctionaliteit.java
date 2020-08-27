@@ -217,11 +217,11 @@ public abstract class DBFunctionaliteit
     protected ObservableList getGeoDataFromDB(Context context)
     {
         ObservableList<Plaats> selectieLijst = new ObservableArrayList();
-//        SQLiteDatabase db = null;
+    //        SQLiteDatabase db = null;
         try
         {
             dbHelper = new DBHelper(context, "SmartBrabantDB");
-//            db = dbHelper.getReadableDatabase();
+    //            db = dbHelper.getReadableDatabase();
             Cursor result = dbHelper.getData("SELECT * FROM Plaats");
             Cursor result2 = null;
             while(result.moveToNext())
@@ -237,7 +237,7 @@ public abstract class DBFunctionaliteit
                 selectedPlaats.setStadPop(result.getInt(4));
                 selectedPlaats.setMetroPop(result.getInt(5));
                 selectedPlaats.setGemeente(result.getString(6));
-                selectedPlaats.setTevredenheid(Double.toString(result2.getDouble(0) * 100) + "%");
+                selectedPlaats.setTevredenheid(String.format("%.2f", result2.getDouble(0) * 100) + "%");
                 selectieLijst.add(selectedPlaats);
             }
         }
@@ -248,11 +248,34 @@ public abstract class DBFunctionaliteit
         }
         finally
         {
-//            if(db != null)
-//                db.endTransaction();
+    //            if(db != null)
+    //                db.endTransaction();
             dbHelper.close();
         }
         return selectieLijst;
+    }
+
+    //Haal de gegeven 'tevredenheid' uit de database op voor de geselecteerde plaats
+    protected String getGeoDataFromDB(Context context, Plaats plaats)
+    {
+        String tevredenheidPlaats = "";
+        try
+        {
+            dbHelper = new DBHelper(context, "SmartBrabantDB");
+            //Hier wordt ieder IoT-apparaat aan een activiteit gekoppeld met overeenkomende datasoort
+            Cursor result = dbHelper.getData("SELECT AVG(tevredenheidPlaats) AS tevredenHeid FROM Burger WHERE plaatsNaam = '" + plaats.getNaam() + "';");
+            result.moveToNext();
+            tevredenheidPlaats = (String.format("%.2f", result.getDouble(0) * 100) + "%");
+        }
+        catch(SQLiteException se)
+        {
+            Log.e(TAG, "SQL-error in method getGeoDataFromDB(Context context): " + se.getMessage());
+        }
+        finally
+        {
+            dbHelper.close();
+        }
+        return tevredenheidPlaats;
     }
 
     //Voer gegevens uit de geselecteerde burger en plaats in de database

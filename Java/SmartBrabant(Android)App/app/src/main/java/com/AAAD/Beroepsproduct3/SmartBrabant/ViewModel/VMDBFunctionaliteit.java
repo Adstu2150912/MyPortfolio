@@ -51,6 +51,12 @@ public class VMDBFunctionaliteit extends DBFunctionaliteit
 	{
 		return this.getGeoDataFromDB(context);
 	}
+
+	//Haal de actuele tevredenheden uit de ViewModel op voor de geselecteerde plaats
+	public String getGeoDataFromVM(Context context, Plaats huidigePlaats)
+	{
+		return this.getGeoDataFromDB(context, huidigePlaats);
+	}
 	
 	//Voer gegevens uit de geselecteerde burger en plaats in de ViewModel
 	public Boolean setFeedbackFormToVM(Context context, Burger burger)

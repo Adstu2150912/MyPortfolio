@@ -117,6 +117,7 @@ public class FeedbackFormActivity extends AppCompatActivity implements Serializa
                 if(isInsertSucces)
                 {
                     toastMessage("Het versturen van dit formulier is geslaagd!");
+                    huidigePlaats.setTevredenheid(dbFunctionaliteit.getGeoDataFromVM(this, huidigePlaats));
                     Intent iFeedbackForm = new Intent(v.getContext(), HomeActivity.class);
                     iFeedbackForm.putExtra("huidigePlaats", huidigePlaats);
                     navigateUpTo(iFeedbackForm);
