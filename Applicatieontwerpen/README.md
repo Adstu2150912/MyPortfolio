@@ -1,6 +1,10 @@
-# Mijn Portfolio
+# Applicatieontwerpen
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan ontwerpen die ik heb gemaakt in het eerste schooljaar en in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+Ook staan hier ontwerpen die ik heb gecreëerd in het eerste schooljaar van mijn hbo-opleiding (Associate Degree) Ad-Informatica (ISAT-nummer '80075').
+
+Deze ontwerpen geven inzicht in de structuur en fundamenten van een of meerdere applicaties.
+Daarom zijn dit de 'blauwdrukken' voor bepaalde applicaties.
 
 ## Git Branches
 
@@ -12,7 +16,11 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* Microsoft Visio 2016
+* Microsoft Word 2016
+* Microsoft Excel 2016
+* GNU Image Manipulation Program (GIMP)
+* Visual Paradigm Community Edition 16
 
 ## Auteur
 

@@ -1,6 +1,13 @@
-# Mijn Portfolio
+# SQL
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan SQL-scripten die ik heb gemaakt in de loop van het eerste, tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+Ook staan hier SQL-opdrachten die ik heb gecreëerd in het eerste schooljaar van mijn hbo-opleiding (Associate Degree) Ad-Informatica (ISAT-nummer '80075').
+
+Deze voorbeelden moeten inzicht geven in mijn kennis, ervaring en vaardigheden in SQL en databasemanagement.
+De volgende onderwerpen komen hier aanbod:
+* MSSQL
+* MySQL
+* Oracle Server
 
 ## Git Branches
 
@@ -12,7 +19,9 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* Microsoft SQL Server Management Studio 2017
+* MySQL Workbench 8.0 CE
+* Notepad++ (voor Oracle Server)
 
 ## Auteur
 

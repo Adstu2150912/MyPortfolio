@@ -1,6 +1,6 @@
-# Mijn Portfolio
+# C Sharp
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan C# applicaties die ik heb geschreven in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
 
 ## Git Branches
 
@@ -12,7 +12,7 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* Visual Studio 2015 Enterprise Editie
 
 ## Auteur
 

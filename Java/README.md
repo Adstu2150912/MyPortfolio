@@ -1,6 +1,12 @@
-# Mijn Portfolio
+# Java
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan Java applicaties die ik heb geschreven in de loop van het eerste schooljaar van mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+
+Onderstaande is de volgorde (oud naar nieuw) van ontwikkeling voor de volgende applicaties:
+* Beroepsproduct 1 - PatientenDossierModule
+* Beroepsproduct 2 - ExamenDossierModule
+* Beroepsproduct 3 - SmartBrabant
+* Beroepsproduct 4 - ECI-Cultuurfabriek (In samenwerkingsverband ontwikkeld)
 
 ## Git Branches
 
@@ -12,7 +18,9 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* Eclipse Java Oxygen versie 4.7.3a
+* Android Studio 3.5.3
+* Apache NetBeans Versie 11.3
 
 ## Auteur
 

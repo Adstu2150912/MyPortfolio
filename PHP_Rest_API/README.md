@@ -1,6 +1,8 @@
-# Mijn Portfolio
+# PHP REST API
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+Hier staat een applicatie die ik als webservice (REST API) in PHP geschreven.
+Deze applictie werd gebruikt in mijn vierde beroepsproduct van mijn hbo hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+De applicatie dient als tussenlaag voor communicatie tussen de smartphoneapplicatie en de online MySQL server.
 
 ## Git Branches
 
@@ -12,7 +14,7 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* Apache NetBeans Versie 11.3
 
 ## Auteur
 

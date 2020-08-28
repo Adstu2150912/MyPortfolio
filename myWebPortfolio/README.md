@@ -1,6 +1,14 @@
-# Mijn Portfolio
+# myWebPortfolio
+In deze module staat één uitgebreide portfoliowebsite die ik zelf, vanuit blanco, zowel heb ontworpen als ontwikkeld in het eerste schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+Op webpagina 'Portfolio' van deze website, vind u alle web-gerelateerde werk die ik in de loop van heel leerjaar 1 van mijn mbo-opleiding heb geschreven.
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+Deze voorbeelden moeten inzicht geven in mijn kennis, ervaring en vaardigheden in webontwikkeling.
+De volgende onderwerpen komen hier aanbod:
+* HTML5
+* CSS3
+* JavaScript (JQuery en AngularJS)
+* PHP7
+* ASP.NET
 
 ## Git Branches
 
@@ -12,7 +20,8 @@ Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of 
 
 ## Gemaakt in
 
-
+* JetBrains PhpStorm versie 2017.1.4
+* Visual Studio 2015 Enterprise editie
 
 ## Auteur
 
