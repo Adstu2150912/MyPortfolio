@@ -1,0 +1,1091 @@
+06/04 11:15:24: Launching 'app' on Nexus 5X API 29 x86.
+$ adb shell am start -n "com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android/com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 32058 on device 'emulator-5554'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursuscategorie
+D/Testdata DB Cursuscategorie: variable categorieID : 1
+          variable catergorieNaam : *categorieNaam1*
+          variable subCategorieNaam : *subCategorie1*
+    variable categorieID : 2
+          variable catergorieNaam : *categorieNaam2*
+          variable subCategorieNaam : *subCategorie2*
+    variable categorieID : 3
+          variable catergorieNaam : *categorieNaam3*
+          variable subCategorieNaam : *subCategorie3*
+    variable categorieID : 4
+          variable catergorieNaam : *categorieNaam4*
+          variable subCategorieNaam : *subCategorie4*
+    variable categorieID : 5
+          variable catergorieNaam : *categorieNaam5*
+          variable subCategorieNaam : *subCategorie5*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_5
+D/Debugger: DBCursusCategorie.insertDataIntoTable: Current Primary Key (CategorieID 5) already exists
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_5
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=update&statement=UPDATE_Cursuscategorie_SET_subCategorie_EQUALS_'*subCategorie123*',categorieNaam_EQUALS_'*categorieNaam1*',omschrijving_EQUALS_'*omschrijving1*'_WHERE_categorieID_EQUALS_5;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursusCategorie.UpdateDataIntoTable(DBCursusCategorie.java:239)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursusCategorie(DebugActivity.java:174)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:28)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursuscategorie
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursuscategorie
+D/Testdata DB Cursuscategorie: variable categorieID : 1
+          variable catergorieNaam : *categorieNaam1*
+          variable subCategorieNaam : *subCategorie1*
+    variable categorieID : 2
+          variable catergorieNaam : *categorieNaam2*
+          variable subCategorieNaam : *subCategorie2*
+    variable categorieID : 3
+          variable catergorieNaam : *categorieNaam3*
+          variable subCategorieNaam : *subCategorie3*
+    variable categorieID : 4
+          variable catergorieNaam : *categorieNaam4*
+          variable subCategorieNaam : *subCategorie4*
+    variable categorieID : 5
+          variable catergorieNaam : *categorieNaam1*
+          variable subCategorieNaam : *subCategorie123*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursuscategorie_WHERE_categorieID_EQUALS_5;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursusCategorie.deleteSpecificData(DBCursusCategorie.java:264)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursusCategorie(DebugActivity.java:185)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:28)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursuscategorie
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursuscategorie
+D/Testdata DB Cursuscategorie: variable categorieID : 1
+          variable catergorieNaam : *categorieNaam1*
+          variable subCategorieNaam : *subCategorie1*
+    variable categorieID : 2
+          variable catergorieNaam : *categorieNaam2*
+          variable subCategorieNaam : *subCategorie2*
+    variable categorieID : 3
+          variable catergorieNaam : *categorieNaam3*
+          variable subCategorieNaam : *subCategorie3*
+    variable categorieID : 4
+D/Testdata DB Cursuscategorie:       variable catergorieNaam : *categorieNaam4*
+          variable subCategorieNaam : *subCategorie4*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus_WHERE_docentID_EQUALS_1;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+W/System.err:     at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:330)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:92)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus_WHERE_docentID_EQUALS_2;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:330)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:92)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus_WHERE_docentID_EQUALS_3;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:330)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:92)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_4
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_4
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus_WHERE_docentID_EQUALS_4;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:330)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:92)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:324)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:92)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err:     at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/Debugger: DBCursus.deleteSpecificData: foreign key 'FK_Cursus_Docent' (docentID 5) does not exists
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Docent;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.DeleteAll(DatabaseTable.java:91)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:95)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:153)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Docent (docentID,docNaam,beschrijving,discipline)_VALUES_(1,'*docent1*','*beschrijving1*','*discipline1*');
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:184)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err:     at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:153)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Docent (docentID,docNaam,beschrijving,discipline)_VALUES_(2,'*docent2*','*beschrijving2*','*discipline2*');
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:184)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:153)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Docent (docentID,docNaam,beschrijving,discipline)_VALUES_(3,'*docent3*','*beschrijving3*','*discipline3*');
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:184)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_4
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_4
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:153)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Docent (docentID,docNaam,beschrijving,discipline)_VALUES_(4,'*docent4*','*beschrijving4*','*discipline4*');
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:184)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.select(DBDocent.java:82)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:153)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Docent (docentID,docNaam,beschrijving,discipline)_VALUES_(5,'*docent5*','*beschrijving5*','*discipline5*');
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.insertDataIntoTable(DBDocent.java:184)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:99)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/Testdata DB Docent: variable docentID : 1
+          variable docentNaam : *docent1*
+          variable discipline : *discipline1*
+    variable docentID : 2
+          variable docentNaam : *docent2*
+          variable discipline : *discipline2*
+    variable docentID : 3
+          variable docentNaam : *docent3*
+          variable discipline : *discipline3*
+    variable docentID : 4
+          variable docentNaam : *docent4*
+D/Testdata DB Docent:       variable discipline : *discipline4*
+    variable docentID : 5
+          variable docentNaam : *docent5*
+          variable discipline : *discipline5*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/Debugger: DBDocent.insertDataIntoTable: Primary Key (DocentID 5) already exists
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_5
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=update&statement=UPDATE_Docent_SET_docNaam_EQUALS_'*docent1*',beschrijving_EQUALS_'*beschrijving1*',discipline_EQUALS_'*discipline123*'_WHERE_docentID_EQUALS_5;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.UpdateDataIntoTable(DBDocent.java:237)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:116)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/Testdata DB Docent: variable docentID : 1
+          variable docentNaam : *docent1*
+          variable discipline : *discipline1*
+    variable docentID : 2
+          variable docentNaam : *docent2*
+          variable discipline : *discipline2*
+    variable docentID : 3
+          variable docentNaam : *docent3*
+          variable discipline : *discipline3*
+    variable docentID : 4
+          variable docentNaam : *docent4*
+          variable discipline : *discipline4*
+    variable docentID : 5
+          variable docentNaam : *docent1*
+          variable discipline : *discipline123*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Docent_WHERE_docentID_EQUALS_5;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBDocent.deleteSpecificData(DBDocent.java:262)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBDocent(DebugActivity.java:127)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:29)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Docent
+D/Testdata DB Docent: variable docentID : 1
+          variable docentNaam : *docent1*
+          variable discipline : *discipline1*
+    variable docentID : 2
+D/Testdata DB Docent:       variable docentNaam : *docent2*
+          variable discipline : *discipline2*
+    variable docentID : 3
+          variable docentNaam : *docent3*
+          variable discipline : *discipline3*
+    variable docentID : 4
+          variable docentNaam : *docent4*
+          variable discipline : *discipline4*
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.DeleteAll(DatabaseTable.java:91)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:42)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_1
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.select(DBCursus.java:86)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:157)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Cursus_(cursusID,cursusNaam,beschrijving,doelGroep,startDatum,dag,tijd,duur,frequentie,lesAantal,lesPrijs,categorieID,docentID)_VALUES_(1,'*cursus1*','*beschrijving1*','*doelGroep1*','2020-05-15','vr','17:55:00','4','Wekelijks 1 keer',10,1.23,1,1);
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:220)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+W/System.err:     at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_2
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_2
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.select(DBCursus.java:86)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:157)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+W/System.err:     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Cursus_(cursusID,cursusNaam,beschrijving,doelGroep,startDatum,dag,tijd,duur,frequentie,lesAantal,lesPrijs,categorieID,docentID)_VALUES_(2,'*cursus2*','*beschrijving2*','*doelGroep2*','2020-05-15','vr','17:57:00','5','Wekelijks 1 keer',10,2.23,1,2);
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+W/System.err:     at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:220)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_3
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.select(DBCursus.java:86)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:157)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+W/System.err:     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+D/HttpConnectionService: entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_3
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Cursus_(cursusID,cursusNaam,beschrijving,doelGroep,startDatum,dag,tijd,duur,frequentie,lesAantal,lesPrijs,categorieID,docentID)_VALUES_(3,'*cursus3*','*beschrijving3*','*doelGroep3*','2020-05-15','vr','17:58:00','6','Wekelijks 1 keer',10,3.23,1,3);
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:220)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_4
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_4
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+        at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.select(DBCursus.java:86)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:157)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+D/HttpConnectionService: entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_3
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Cursus_(cursusID,cursusNaam,beschrijving,doelGroep,startDatum,dag,tijd,duur,frequentie,lesAantal,lesPrijs,categorieID,docentID)_VALUES_(4,'*cursus4*','*beschrijving4*','*doelGroep4*','2020-05-15','vr','17:59:00','7','Wekelijks 1 keer',10,4.23,3,1);
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+D/HttpConnectionService: entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:220)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+W/System.err:     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+W/System.err: org.json.JSONException: Value {"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null} of type org.json.JSONObject cannot be converted to JSONArray
+W/System.err:     at org.json.JSON.typeMismatch(JSON.java:111)
+        at org.json.JSONArray.<init>(JSONArray.java:96)
+        at org.json.JSONArray.<init>(JSONArray.java:108)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.select(DBCursus.java:86)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:157)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_3
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_3
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_2
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=insert&statement=INSERT_INTO_Cursus_(cursusID,cursusNaam,beschrijving,doelGroep,startDatum,dag,tijd,duur,frequentie,lesAantal,lesPrijs,categorieID,docentID)_VALUES_(5,'*cursus5*','*beschrijving5*','*doelGroep5*','2020-05-15','vr','18:00:00','8','Wekelijks 1 keer',10,5.23,3,2);
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.insertDataIntoTable(DBCursus.java:220)
+W/System.err:     at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.insertDataIntoTable(DatabaseTable.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:44)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/Testdata DB Cursus: variable cursusID : 1
+    variable cursusNaam : *cursus1*
+    variable lesPrijs : 1.23
+    variable cursusID : 2
+    variable cursusNaam : *cursus2*
+    variable lesPrijs : 2.23
+    variable cursusID : 3
+    variable cursusNaam : *cursus3*
+    variable lesPrijs : 3.23
+    variable cursusID : 4
+    variable cursusNaam : *cursus4*
+D/Testdata DB Cursus: variable lesPrijs : 4.23
+    variable cursusID : 5
+    variable cursusNaam : *cursus5*
+    variable lesPrijs : 5.23
+I/art: Do partial code cache collection, code=27KB, data=30KB
+    After code cache collection, code=27KB, data=30KB
+    Increasing code cache capacity to 128KB
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+D/Debugger: DBCursus.insertDataIntoTable: Current Primary Key (CursusID 5) already exists
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursus&condition=cursusID_EQUALS_5
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Cursuscategorie&condition=categorieID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=single&table=Docent&condition=docentID_EQUALS_1
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=update&statement=UPDATE_Cursus_SET_cursusNaam_EQUALS_'*cursus1*'_,_beschrijving_EQUALS_'*beschrijving1*',_doelGroep_EQUALS_'*doelGroep1*',_startDatum_EQUALS_'2020-05-15',_dag_EQUALS_'vr',_tijd_EQUALS_'17:55:00',_duur_EQUALS_4,_frequentie_EQUALS_'Wekelijks 1 keer',_lesAantal_EQUALS_10,_lesPrijs_EQUALS_98.65,_categorieID_EQUALS_1,_docentID_EQUALS_1_WHERE_cursusID_EQUALS_5 ;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.UpdateDataIntoTable(DBCursus.java:296)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:60)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/Testdata DB Cursus: variable cursusID : 1
+          variable cursusNaam : *cursus1*
+          variable lesPrijs : 1.23
+    variable cursusID : 2
+          variable cursusNaam : *cursus2*
+          variable lesPrijs : 2.23
+    variable cursusID : 3
+          variable cursusNaam : *cursus3*
+          variable lesPrijs : 3.23
+    variable cursusID : 4
+          variable cursusNaam : *cursus4*
+          variable lesPrijs : 4.23
+D/Testdata DB Cursus: variable cursusID : 5
+          variable cursusNaam : *cursus1*
+          variable lesPrijs : 98.65
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?dml=delete&statement=DELETE_FROM_Cursus_WHERE_cursusID_EQUALS_5;
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+W/System.err: org.json.JSONException: End of input at character 0 of 
+        at org.json.JSONTokener.syntaxError(JSONTokener.java:449)
+        at org.json.JSONTokener.nextValue(JSONTokener.java:97)
+        at org.json.JSONObject.<init>(JSONObject.java:156)
+        at org.json.JSONObject.<init>(JSONObject.java:173)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DatabaseTable.Delete(DatabaseTable.java:125)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.DB.DBCursus.deleteSpecificData(DBCursus.java:321)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDBCursus(DebugActivity.java:70)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.View.DebugActivity.testDatabase(DebugActivity.java:30)
+        at com.aaad.beroepsproduct4.ecicultuurfabriekapp.Android.MainActivity.onCreate(MainActivity.java:27)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+D/HttpConnectionService: Starting process to connect path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/HttpConnectionService: entry.Key: HTTP_ACCEPT
+    entry.Value: application/json
+D/HttpConnectionService: Connection success to path: http://172.104.237.208/Controller/RestController.php?view=all&table=Cursus
+D/Testdata DB Cursus: variable cursusID : 1
+          variable cursusNaam : *cursus1*
+          variable lesPrijs : 1.23
+    variable cursusID : 2
+          variable cursusNaam : *cursus2*
+          variable lesPrijs : 2.23
+    variable cursusID : 3
+          variable cursusNaam : *cursus3*
+          variable lesPrijs : 3.23
+    variable cursusID : 4
+          variable cursusNaam : *cursus4*
+          variable lesPrijs : 4.23
+D/Test eind: *******************************************************END********************************************************
+D/: HostConnection::get() New Host Connection established 0x77841a9acea0, tid 32058
+D/: HostConnection::get() New Host Connection established 0x77841d212cc0, tid 32088
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+D/OpenGLRenderer: Swap behavior 0
+D/EGL_emulation: eglCreateContext: 0x77841d264aa0: maj 3 min 1 rcv 4
+I/ViewConfigCompat: Could not find method getScaledScrollFactor() on ViewConfiguration
+D/EGL_emulation: eglMakeCurrent: 0x77841d264aa0: ver 3 1 (tinfo 0x77841d294160)
+E/eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+    glUtilsParamSize: unknow param 0x000082da
+D/EGL_emulation: eglMakeCurrent: 0x77841d264aa0: ver 3 1 (tinfo 0x77841d294160)
