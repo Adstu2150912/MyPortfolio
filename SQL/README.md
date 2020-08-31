@@ -1,7 +1,7 @@
 # SQL
 
-In deze module staan SQL-scripten die ik heb gemaakt in de loop van het eerste, tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
-Ook staan hier SQL-opdrachten die ik heb gecreëerd in het eerste schooljaar van mijn hbo-opleiding (Associate Degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan de meest kwalitatieve van alle SQL-scripten die ik heb gemaakt in de loop van het eerste, tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+Ook staan hier de meest kwalitatieve van alle SQL-opdrachten die ik heb gecreëerd in het eerste schooljaar van mijn hbo-opleiding (Associate Degree) Ad-Informatica (ISAT-nummer '80075').
 
 Deze voorbeelden moeten inzicht geven in mijn kennis, ervaring en vaardigheden in SQL en databasemanagement.
 De volgende onderwerpen komen hier aanbod:

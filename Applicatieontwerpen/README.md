@@ -1,6 +1,6 @@
 # Applicatieontwerpen
 
-In deze module staan ontwerpen die ik heb gemaakt in het eerste schooljaar en in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+In deze module staan de meest kwalitatieve van alle ontwerpen die ik heb gemaakt in het eerste schooljaar en in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
 Ook staan hier ontwerpen die ik heb gecreëerd in het eerste schooljaar van mijn hbo-opleiding (Associate Degree) Ad-Informatica (ISAT-nummer '80075').
 
 Deze ontwerpen geven inzicht in de structuur en fundamenten van een of meerdere applicaties.

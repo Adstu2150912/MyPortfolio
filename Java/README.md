@@ -1,6 +1,6 @@
 # Java
 
-In deze module staan Java applicaties die ik heb geschreven in de loop van het eerste schooljaar van mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+In deze module staan de meest kwalitatieve van alle Java applicaties die ik heb geschreven in de loop van het eerste schooljaar van mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
 
 Onderstaande is de volgorde (oud naar nieuw) van ontwikkeling voor de volgende applicaties:
 * Beroepsproduct 1 - PatientenDossierModule

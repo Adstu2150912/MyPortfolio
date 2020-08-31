@@ -1,6 +1,6 @@
 # myWebPortfolio
 In deze module staat één uitgebreide portfoliowebsite die ik zelf, vanuit blanco, zowel heb ontworpen als ontwikkeld in het eerste schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
-Op webpagina 'Portfolio' van deze website, vind u alle web-gerelateerde werk die ik in de loop van heel leerjaar 1 van mijn mbo-opleiding heb geschreven.
+Op webpagina 'Portfolio' van deze website, vind u de meest kwalitatieve van alle web-gerelateerde werk die ik in de loop van heel leerjaar 1 van mijn mbo-opleiding heb geschreven.
 
 Deze voorbeelden moeten inzicht geven in mijn kennis, ervaring en vaardigheden in webontwikkeling.
 De volgende onderwerpen komen hier aanbod:

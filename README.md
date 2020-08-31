@@ -1,6 +1,6 @@
 # Mijn Portfolio
 
-Hier komen en/of staan (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+Hier komen en/of staan de meest kwalitatieve van alle (documentaties van) applicaties die ik heb gemaakt en/of aan heb gewerkt in de loop van heel mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187') en mijn hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
 
 ## Git Branches
 

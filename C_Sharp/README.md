@@ -1,6 +1,6 @@
 # C Sharp
 
-In deze module staan C# applicaties die ik heb geschreven in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
+In deze module staan de meest kwalitatieve van alle C# applicaties die ik heb geschreven in de loop van het tweede en derde schooljaar van mijn mbo-opleiding Applicatie- en mediaontwikkelaar (crebonummer '25187').
 
 ## Git Branches
 
