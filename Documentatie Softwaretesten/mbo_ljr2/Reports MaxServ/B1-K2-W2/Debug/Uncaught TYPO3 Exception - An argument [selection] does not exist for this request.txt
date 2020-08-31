@@ -1,0 +1,301 @@
+Dit was gebeurd nà 1 keer filteren op 'Person' of 'Group', in de eerste dropdownlist van subvenster 'Group' onder hoofdvenster 'Filter' met een standaard/geautomatiseerde geselecteerde waarde in de tweede dropdownlist.  
+
+De geselecteerde waarde in de tweede dropdownlist, met in de eerste dropdownlist 'Group' of 'Person' als geselecteerde waarde, was leeg nadat er 1 keer werd gefilteerd met een standaard waarde.
+
+
+Uncaught TYPO3 Exception
+#1176558158: An argument "selection" does not exist for this request. (More information)
+
+TYPO3\CMS\Extbase\Mvc\Exception\NoSuchArgumentException thrown in file
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Mvc/Request.php in line 444.
+
+23 TYPO3\CMS\Extbase\Mvc\Request::getArgument("selection")
+
+
+/var/www/reports.dev.maxserv.com/Web/typo3conf/ext/site_reports/Classes/Controller/DevelopmentStatsController.php:
+
+00554: 
+00555:         if ($this->statisticsType === 'showPerson') {
+
+00556:             $users[] = $this->getControllerContext()->getRequest()->getArgument('selection');
+
+00557:         }
+00558: 
+
+
+22 MaxServ\SiteReports\Controller\DevelopmentStatsController::getUsersForSelection()
+
+
+/var/www/reports.dev.maxserv.com/Web/typo3conf/ext/site_reports/Classes/Controller/DevelopmentStatsController.php:
+
+00077:     public function commitStatsAction()
+00078:     {
+
+00079:         $this->usersForSelection = $this->getUsersForSelection();
+
+00080:         $numberOfCommits = $this->getNumberOfCommits();
+00081:         $numberOfCommitters = $this->getNumberOfCommitters();
+
+
+21 MaxServ\SiteReports\Controller\DevelopmentStatsController::commitStatsAction()
+
+20 call_user_func_array(array, array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Mvc/Controller/ActionController.php:
+
+00314:         if (!$validationResult->hasErrors()) {
+00315:             $this->emitBeforeCallActionMethodSignal($preparedArguments);
+
+00316:             $actionResult = call_user_func_array([$this, $this->actionMethodName], $preparedArguments);
+
+00317:         } else {
+00318:             $methodTagsValues = $this->reflectionService->getMethodTagsValues(get_class($this), $this->actionMethodName);
+
+
+19 TYPO3\CMS\Extbase\Mvc\Controller\ActionController::callActionMethod()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Mvc/Controller/ActionController.php:
+
+00174:             $this->initializeView($this->view);
+00175:         }
+
+00176:         $this->callActionMethod();
+
+00177:         $this->renderAssetsForRequest($request);
+00178:     }
+
+
+18 TYPO3\CMS\Extbase\Mvc\Controller\ActionController::processRequest(TYPO3\CMS\Extbase\Mvc\Web\Request, TYPO3\CMS\Extbase\Mvc\Web\Response)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Mvc/Dispatcher.php:
+
+00083:             $controller = $this->resolveController($request);
+00084:             try {
+
+00085:                 $controller->processRequest($request, $response);
+
+00086:             } catch (\TYPO3\CMS\Extbase\Mvc\Exception\StopActionException $ignoredException) {
+00087:             }
+
+
+17 TYPO3\CMS\Extbase\Mvc\Dispatcher::dispatch(TYPO3\CMS\Extbase\Mvc\Web\Request, TYPO3\CMS\Extbase\Mvc\Web\Response)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Mvc/Web/FrontendRequestHandler.php:
+
+00089:         /** @var $response \TYPO3\CMS\Extbase\Mvc\ResponseInterface */
+00090:         $response = $this->objectManager->get(\TYPO3\CMS\Extbase\Mvc\Web\Response::class);
+
+00091:         $this->dispatcher->dispatch($request, $response);
+
+00092:         return $response;
+00093:     }
+
+
+16 TYPO3\CMS\Extbase\Mvc\Web\FrontendRequestHandler::handleRequest()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Core/Bootstrap.php:
+
+00197:         $requestHandler = $requestHandlerResolver->resolveRequestHandler();
+00198: 
+
+00199:         $response = $requestHandler->handleRequest();
+
+00200:         // If response is NULL after handling the request we need to stop
+00201:         // This happens for instance, when a USER object was converted to a USER_INT
+
+
+15 TYPO3\CMS\Extbase\Core\Bootstrap::handleRequest()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/extbase/Classes/Core/Bootstrap.php:
+
+00184:     {
+00185:         $this->initialize($configuration);
+
+00186:         return $this->handleRequest();
+
+00187:     }
+00188: 
+
+
+14 TYPO3\CMS\Extbase\Core\Bootstrap::run("", array)
+
+13 call_user_func_array(array, array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/ContentObject/ContentObjectRenderer.php:
+
+06250:                     ], [
+06251:                         $content,
+
+06252:                         $conf
+
+06253:                     ]);
+06254:                 } else {
+
+
+12 TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::callUserFunction("TYPO3\CMS\Extbase\Core\Bootstrap->run", array, "")
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/ContentObject/UserContentObject.php:
+
+00039:             $this->cObj->setUserObjectType(ContentObjectRenderer::OBJECTTYPE_USER);
+00040:         }
+
+00041:         $tempContent = $this->cObj->callUserFunction($conf['userFunc'], $conf, '');
+
+00042:         if ($this->cObj->doConvertToUserIntObject) {
+00043:             $this->cObj->doConvertToUserIntObject = false;
+
+
+11 TYPO3\CMS\Frontend\ContentObject\UserContentObject::render(array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/ContentObject/ContentObjectRenderer.php:
+
+00817:         // Render content
+00818:         try {
+
+00819:             $content .= $contentObject->render($configuration);
+
+00820:         } catch (ContentRenderingException $exception) {
+00821:             // Content rendering Exceptions indicate a critical problem which should not be
+
+
+10 TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::render(TYPO3\CMS\Frontend\ContentObject\UserContentObject, array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/ContentObject/ContentObjectRenderer.php:
+
+00733:                     $contentObject = $this->getContentObject($name);
+00734:                     if ($contentObject) {
+
+00735:                         $content .= $this->render($contentObject, $conf);
+
+00736:                     } else {
+00737:                         // Call hook functions for extra processing
+
+
+9 TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer::cObjGetSingle("USER", array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/Controller/TypoScriptFrontendController.php:
+
+03520:                             break;
+03521:                         case 'FUNC':
+
+03522:                             $incContent = $INTiS_cObj->cObjGetSingle('USER', $INTiS_config[$INTiS_key]['conf']);
+
+03523:                             break;
+03524:                         case 'POSTUSERFUNC':
+
+
+8 TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::INTincScript_process(array)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/Controller/TypoScriptFrontendController.php:
+
+03482:         do {
+03483:             $INTiS_config = $this->config['INTincScript'];
+
+03484:             $this->INTincScript_process($INTiS_config);
+
+03485:             // Check if there were new items added to INTincScript during the previous execution:
+03486:             $INTiS_config = array_diff_assoc($this->config['INTincScript'], $INTiS_config);
+
+
+7 TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::recursivelyReplaceIntPlaceholdersInContent()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/Controller/TypoScriptFrontendController.php:
+
+03449:         }
+03450: 
+
+03451:         $this->recursivelyReplaceIntPlaceholdersInContent();
+
+03452:         $this->getTimeTracker()->push('Substitute header section');
+03453:         $this->INTincScript_loadJSCode();
+
+
+6 TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::INTincScript()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/Http/RequestHandler.php:
+
+00223:         if ($this->controller->isINTincScript()) {
+00224:             $this->timeTracker->push('Non-cached objects', '');
+
+00225:             $this->controller->INTincScript();
+
+00226:             $this->timeTracker->pull();
+00227:         }
+
+
+5 TYPO3\CMS\Frontend\Http\RequestHandler::handleRequest(TYPO3\CMS\Core\Http\ServerRequest)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/core/Classes/Core/Bootstrap.php:
+
+00313: 
+00314:         // Execute the command which returns a Response object or NULL
+
+00315:         $this->response = $requestHandler->handleRequest($request);
+
+00316:         return $this;
+00317:     }
+
+
+4 TYPO3\CMS\Core\Core\Bootstrap::handleRequest(TYPO3\CMS\Core\Http\ServerRequest)
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Classes/Http/Application.php:
+
+00077:     public function run(callable $execute = null)
+00078:     {
+
+00079:         $this->bootstrap->handleRequest(\TYPO3\CMS\Core\Http\ServerRequestFactory::fromGlobals());
+
+00080: 
+00081:         if ($execute !== null) {
+
+
+3 TYPO3\CMS\Frontend\Http\Application::run()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Resources/Private/Php/frontend.php:
+
+00021: call_user_func(function () {
+00022:     $classLoader = require __DIR__ . '/../../../../../../vendor/autoload.php';
+
+00023:     (new \TYPO3\CMS\Frontend\Http\Application($classLoader))->run();
+
+00024: });
+
+
+2 {closure}()
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/typo3/sysext/frontend/Resources/Private/Php/frontend.php:
+
+00022:     $classLoader = require __DIR__ . '/../../../../../../vendor/autoload.php';
+00023:     (new \TYPO3\CMS\Frontend\Http\Application($classLoader))->run();
+
+00024: });
+
+
+1 require("/var/www/reports.dev.maxserv.com/Web/Packages/Libr…sysext/frontend/Resources/Private/Php/frontend.php")
+
+
+/var/www/reports.dev.maxserv.com/Web/Packages/Libraries/typo3/cms/index.php:
+
+00001: <?php
+00002: 
+
+00003: require __DIR__ . '/typo3/sysext/frontend/Resources/Private/Php/frontend.php';
+
