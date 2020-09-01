@@ -1,0 +1,26 @@
+﻿<Instrumenten>
+  <Instrument>
+    <instrumentID>1</instrumentID>
+    <instrument>AB</instrument>
+    <instrumenttype>Hobo</instrumenttype>
+    <merk>M1</merk>
+    <verzekeringID>1</verzekeringID>
+    <verenigingslidID>3</verenigingslidID>
+  </Instrument>
+  <Instrument>
+    <instrumentID>2</instrumentID>
+    <instrument>CD</instrument>
+    <instrumenttype>Bes-klarinet</instrumenttype>
+    <merk>M2</merk>
+    <verzekeringID>3</verzekeringID>
+    <verenigingslidID>1</verenigingslidID>
+  </Instrument>
+  <Instrument>
+    <instrumentID>3</instrumentID>
+    <instrument>EF</instrument>
+    <instrumenttype>Slagwerk</instrumenttype>
+    <merk>M3</merk>
+    <verzekeringID>2</verzekeringID>
+    <verenigingslidID>2</verenigingslidID>
+  </Instrument>
+</Instrumenten>

@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<!--
+
+Opdracht:       Toets ASP Periode 4
+Auteur:         <Adam Oubelkas>
+Aanmaakdatum:   <12-6-2017 + 13:18>
+Bestandsnaam:   <MasterPage.master>
+    
+-->
+
+
+
+<html lang="en">
+    <head runat="server">
+        <!--Omschrijving van de webpagina-->
+		<meta name="description" content="loginpagina">
+		<!--Toekennen van sleutelwoorden-->
+		<meta name="keywords" content="Inloggen, Login, sessies, sessions">
+		<!--Tekstset declareren-->
+        <meta charset="utf-8" />
+        <!--Titel webpagina-->
+        <title>ASP Master-detail webpagina - Pretparken en achtbanen</title>
+        <!--Link naar extern css bestand-->
+        <link href="Stylesheet.css" rel="stylesheet" type="text/css"/>
+
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <script src="../../../../scripts/jquery-3.2.0.min.js"></script>
+		<script src="../../../../scripts/Script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('header > h1').empty('*');
+                $('header > h1').css('display', 'none');
+                $('header > h1').append("Neem een kijk bij alle pretparken en achtbanen in Nederland!").fadeIn(1000);
+                $('section > nav > h3 > a').empty();
+                $('section > nav > h3 > a').css('display', 'none');
+                $('section > nav > h3 > a').append("Portfoliowebsite <br/> Adam Oubelkas").fadeIn(1000);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+        <section>
+            <nav>
+				<h3><a href="../../../../index.html">Portfoliowebsite <br/> Adam Oubelkas</a></h3>
+                <ul>
+                    <li>
+                        <a href="../../../Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+                    </li>
+                    <li>
+                        <a href="../../../Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+                    </li>
+                    <li>
+                        <a href="../../../Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../../../Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="main">
+                <form id="form1" runat="server">
+                    <div>
+                        <div id="MasterView">
+                            <h2>Pretparken en achtbanen in Nederland</h2>
+                            <asp:Menu ID="Menu1" runat="server" >
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/webpaginas/mijnPortfolio/ASP/Toets2/Overzicht.aspx" Text="Overzicht" Value="Overzicht"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/webpaginas/mijnPortfolio/ASP/Toets2/Records.aspx" Text="Records" Value="Records"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            <br />
+                        </div>
+                        <div id="DetailView">
+                           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+        </footer>
+    </body>
+</html>

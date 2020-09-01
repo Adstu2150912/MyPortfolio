@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">Email:</string>
+    <string name="test_email_com">test@email.com</string>
+    <string name="inlognaam">Inlognaam:</string>
+    <string name="johndoeacc">JohnDoeAcc</string>
+    <string name="wachtwoord">Wachtwoord</string>
+    <string name="voornaam">Voornaam</string>
+    <string name="achternaam">Achternaam:</string>
+    <string name="geboortedatum">geboortedatum:</string>
+    <string name="john">John</string>
+    <string name="j_d">J.D.</string>
+    <string name="plaats">Plaats:</string>
+    <string name="straatnaam">Straatnaam:</string>
+    <string name="huisnummer">Huisnummer</string>
+    <string name="voorletters">voorletters</string>
+    <string name="tel">Tel:</string>
+    <string name="iban">Iban:</string>
+    <string name="wachtwoordhint">*************</string>
+    <string name="doe">Doe</string>
+    <string name="man">man</string>
+    <string name="geslacht">Geslacht:</string>
+    <string name="_31_05_2020">31-05-2020</string>
+    <string name="den_bosch">Den Bosch</string>
+    <string name="studentenstraat">studentenstraat</string>
+    <string name="_25">25</string>
+    <string name="_1234567892">1234567892</string>
+    <string name="_123456987456321">123456987456321</string>
+    <string name="textview">TextView</string>
+    <string name="event_id">Event ID</string>
+    <string name="evid">EVID</string>
+    <string name="reserveren">Reserveren</string>
+    <string name="aantal_tickets">aantal tickets</string>
+    <string name="_1">1</string>
+    <string name="gebruiker">gebruiker</string>
+</resources>

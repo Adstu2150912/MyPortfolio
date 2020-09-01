@@ -1,0 +1,106 @@
+﻿<Page x:Class="Gildenbondsharmonie.UI.PersoonRegistratie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gildenbondsharmonie.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PersoonRegistratie"
+      x:Name="UIPersoonRegistratie"
+      Loaded="UIPersoonRegistratie_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="NaamSubvenster" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Registratie Persoon" FontSize="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+        <ListView x:Name="lvPersoon" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="5" ItemsSource="{Binding Personen}" SelectedItem="{Binding SelectedPersoon}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="WoonadresID" DisplayMemberBinding="{Binding WoonadresID, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Voorletters" DisplayMemberBinding="{Binding Voorletters, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Voornaam" DisplayMemberBinding="{Binding Voornaam, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Tussenvoegsel" DisplayMemberBinding="{Binding Tussenvoegsel, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Achternaam" DisplayMemberBinding="{Binding Achternaam, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Geslacht" DisplayMemberBinding="{Binding Geslacht, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Geboortedatum" DisplayMemberBinding="{Binding GeboorteDatum, Mode=OneWay,StringFormat='{}{0:dd.MM.yyyy}'}"></GridViewColumn>
+                    <GridViewColumn Header="Telefoonnummer" DisplayMemberBinding="{Binding TelefoonNummer, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Mobielnummer" DisplayMemberBinding="{Binding MobielNummer, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Emailadres" DisplayMemberBinding="{Binding EmailAdres, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Groepnaam" DisplayMemberBinding="{Binding GroepNaam, Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Groeptype" DisplayMemberBinding="{Binding GroepType, Mode=OneWay}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label x:Name="lblRegistratie" Grid.Row="6" Grid.Column="0">Registratie:</Label>
+        
+        <Label x:Name="lblWoonadresID" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">WoonadresID</Label>
+        <Label x:Name="lblVoorletters" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Voorletters</Label>
+        <Label x:Name="lblVoornaam" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Voornaam</Label>
+        <Label x:Name="lblTussenvoegsel" Grid.Row="7" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Tussenvoegsel</Label>
+        <Label x:Name="lblAchternaam" Grid.Row="7" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">Achternaam</Label>
+
+        <TextBox x:Name="txtWoonadresID" Grid.Row="8" Grid.Column="0" Width="100" Height="30" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.WoonadresID, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtVoorletters" Grid.Row="8" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.Voorletters, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtVoornaam" Grid.Row="8" Grid.Column="2" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.Voornaam, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtTussenvoegsel" Grid.Row="8" Grid.Column="3" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.Tussenvoegsel, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtAchterNaam" Grid.Row="8" Grid.Column="4" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.Achternaam, Mode=OneWay}"></TextBox>
+
+        <Label x:Name="lblGeslacht" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Geslacht</Label>
+        <Label x:Name="lblGeboorteDatum" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Geboortedatum</Label>
+        <Label x:Name="lblTelefoonNummer" Grid.Row="9" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Telefoonnummer</Label>
+        <Label x:Name="lblMobielNummer" Grid.Row="9" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Mobielnummer</Label>
+        <Label x:Name="lblEmailAdres" Grid.Row="9" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">Emailadres</Label>
+        
+        <Label x:Name="lblGroepNaam" Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Groepnaam</Label>
+        <Label x:Name="lblGroepType" Grid.Row="11" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Groeptype</Label>
+
+        <StackPanel Grid.Row="10" Grid.Column="0" Orientation="Horizontal">
+            <RadioButton x:Name="rbGeslachtMan" GroupName="Geslacht" Content="Man" IsChecked="True"></RadioButton>
+            <RadioButton x:Name="rbGeslachtVrouw" GroupName="Geslacht" Margin="10, 0" Content="Vrouw"></RadioButton>
+        </StackPanel>
+        <DatePicker x:Name="dpGeboorteDatum" Grid.Row="10" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedDate="{Binding ElementName=lvPersoon, Path=SelectedItem.GeboorteDatum, Mode=OneWay}"></DatePicker>
+        <TextBox x:Name="txtTelefoonNummer" Grid.Row="10" Grid.Column="2" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.TelefoonNummer, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtMobielNummer" Grid.Row="10" Grid.Column="3" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.MobielNummer, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtEmailAdres" Grid.Row="10" Grid.Column="4" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.EmailAdres, Mode=OneWay}"></TextBox>
+        
+        <ComboBox x:Name="cbxGroepNaam" Grid.Row="12" Grid.Column="0" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.GroepNaam, Mode=OneWay}"></ComboBox>
+        <ComboBox x:Name="cbxGroepType" Grid.Row="12" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvPersoon, Path=SelectedItem.GroepType, Mode=OneWay}"></ComboBox>
+
+        <TextBlock Text="Selectie:" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2" FontSize="16" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="tbSelectieWeergave" FontFamily="Sans-serif" FontSize="14" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="15"
+        Text="{Binding PersoonKwalificatie, Mode=OneWay}" Visibility="{Binding VisibilityPersoon, Mode=OneWay}"
+        HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
+
+        <Button x:Name="BtnInvoeren" Click="BtnInvoeren_Click" Grid.Row="14" Grid.Column="0" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Invoeren</Button>
+        <Button x:Name="BtnBewerken" Click="BtnBewerken_Click" Grid.Row="14" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Bewerken</Button>
+        <Button x:Name="BtnVerwijderen" Click="BtnVerwijderen_Click" Grid.Row="14" Grid.Column="2" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Verwijderen</Button>
+    </Grid>
+</Page>

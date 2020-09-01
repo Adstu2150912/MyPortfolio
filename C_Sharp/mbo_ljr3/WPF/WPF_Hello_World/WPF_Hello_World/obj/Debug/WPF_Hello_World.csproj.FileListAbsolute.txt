@@ -1,0 +1,30 @@
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.exe.config
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.exe
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.pdb
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csprojAssemblyReference.cache
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\MainWindow.g.cs
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\App.g.cs
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World_MarkupCompile.cache
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World_MarkupCompile.lref
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\MainWindow.baml
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.g.resources
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.Properties.Resources.resources
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csproj.GenerateResource.cache
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.exe
+C:\Users\O-Kai\Source\Repos\C Sharp Applicaties\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.exe.config
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\bin\Debug\Hello_World.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csprojAssemblyReference.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\MainWindow.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\App.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World_MarkupCompile.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World_MarkupCompile.lref
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\MainWindow.baml
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.g.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.Properties.Resources.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csproj.GenerateResource.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\WPF_Hello_World.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\WPF_Hello_World\WPF_Hello_World\obj\Debug\Hello_World.pdb

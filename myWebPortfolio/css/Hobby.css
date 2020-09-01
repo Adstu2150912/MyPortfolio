@@ -1,0 +1,335 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: ElliotSans-Regular;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: ElliotSans-Regular;
+    src: url('../font/ElliotSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Rounded Elegance";
+    src: url('../font/Rounded_Elegance.ttf');
+}
+
+@media only screen and (orientation: landscape){
+
+    header {
+        width: 80%;
+        background-color: #DBEEF3;
+        right: 0;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        position: fixed;
+        height: 93px;
+    }
+
+    header > h1 {
+        text-align: center;
+        padding: 1% 4%;
+        height: 100%;
+        font-family: "Rounded Elegance";
+    }
+    
+    nav {
+        background-color: #205867;
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        top: 0;
+        margin: 0;
+    }
+    
+    #main {
+        margin-left: 20%;
+    }
+
+    #main img {
+        height: 300px;
+    }
+
+    nav > h3 {
+        width: 100%;
+    }
+
+    nav ul a {
+        padding: 10px 75px;
+    }
+    section {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (orientation: portrait) {
+    /*Als er een smartphone of andere touchscreen apparaat gebruikt wordt*/
+    @media(hover:hover) {
+
+        /*Hier komt code voor het tonen van navigatievenster via touchscreen*/
+        nav {
+            z-index: 1;
+        }
+    }
+
+    nav:hover {
+        z-index: 1;
+    }
+
+    header > h1 {
+        font-size: 14px;
+        padding: 3% 4%;
+        text-align: center;
+        height: 100%;
+        font-family: "Rounded Elegance";
+    }
+
+    nav > h3 {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    nav {
+        z-index: -1;
+        background-color: #205867;
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        top: 0;
+        margin: 0;
+    }
+
+    #main {
+        margin-left: 0;
+        position: absolute;
+        overflow-y: scroll;
+        font-size: 12px;
+    }
+
+    #main img {
+        height: 30%;
+    }
+
+    nav > h3 {
+        width: 175%;
+    }
+
+    header {
+        width: 65%;
+        background-color: #DBEEF3;
+        right: 0;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        position: fixed;
+        height: 93px;
+    }
+
+    nav ul a {
+        padding: 10px 10px;
+    }
+
+    nav > h3 > a {
+        font-size: 13px;
+    }
+
+    nav ul {
+        width: 174%;
+        background-color: #205867;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    nav ul a {
+        padding: 10px 15px;
+    }
+
+}
+
+section {
+    background-color: #fff;
+    margin: 0px;
+    right: 0;
+}
+
+
+
+nav > h3 {
+    background-color: #31859B;
+    margin: 0px;
+    height: 53px;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+nav > h3 > a {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;   
+}
+
+
+nav > h3:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+     transition: 0.5s;
+}
+
+li:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+nav 
+{
+    background-color: #205867;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: #3287DC;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li {
+    background-color: #82AC2D;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li {
+    background-color: #FDD048;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li + li {
+    background-color: #C05046;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul li + li + li + li + li {
+    background-color: #C05046;
+    text-align: center;
+	margin: 0px;
+}
+
+nav ul a
+{
+	display: block;
+	text-align: center;
+}
+
+section > #main {
+    background-color: #002B00;
+	display: inline-block;
+    margin-top: 92px;
+    width: 0%;
+    height: 0vh; 
+}
+
+#gegevens {
+    margin: 0;
+    height: 100%;
+}
+
+#kolom1 {
+	background-color: #F9C499;
+	float: left;
+}
+
+#kolom2 {
+	background-color: #fab091;
+	float: left;
+}
+
+#kolom3 {
+	background-color: #f6bf94;
+	float: left;
+}
+
+#legenda {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #205867;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    width: calc(100%/3);
+}
+
+#optie  {
+    background-color: #82AC2D; 
+	width: 100%;
+    display: block;
+    padding: 15px 0;
+    margin: 10px 0 0 0;
+}
+
+#optie > p {
+    display: block;
+    text-align: center;
+}
+
+footer {
+	background-color: #90d2e3;
+	text-align: center;
+	display: block;
+	position: fixed;
+	left: 0px;
+	bottom: 0%;
+	right: 0px;	
+	margin: 0px;
+    z-index: 2;
+}
+
+#main > * {
+    font-family: ElliotSans-Regular;
+    margin: 0;
+    padding: 0;
+}
+
+#main > #gegevens > .kolom456 {
+    width: calc(100%/3);
+    text-align: center;
+    height: 60vh;
+    margin: 0;
+}
+
+.describeHobby {
+    padding: 0 10%;
+}

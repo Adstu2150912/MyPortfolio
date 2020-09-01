@@ -1,0 +1,25 @@
+﻿<Window x:Class="Opdracht_4._3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opdracht_4._3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto">
+            <ListBox x:Name="lbxPersonFamilyName" ItemsSource="{Binding}" DisplayMemberPath="FamilyName">
+            </ListBox>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Label x:Name="lblID" HorizontalAlignment="Left" VerticalAlignment="Center">ID</Label>
+                <Label x:Name="lblFirstName" HorizontalAlignment="Center" VerticalAlignment="Center">FirstName</Label>
+                <Label x:Name="lblkFamilyname" HorizontalAlignment="Right" VerticalAlignment="Center">FamilyName</Label>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <TextBlock x:Name="tblkID" Height="{Binding ElementName=lblID, Path=Height}" Width="{Binding ElementName=lblID, Path=Width}" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="10" Text="{Binding ElementName=lbxPersonFamilyName, Path=SelectedItem.ID}"></TextBlock>
+                <TextBlock x:Name="tblkFirstName" Height="{Binding ElementName=lblFirstName, Path=Height}" Width="{Binding ElementName=lblFirstName, Path=Width}" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" Text="{Binding ElementName=lbxPersonFamilyName, Path=SelectedItem.FirstName}"></TextBlock>
+                <TextBlock x:Name="tblkFamilyname" Height="{Binding ElementName=lblkFamilyname, Path=Height}" Width="{Binding ElementName=lblkFamilyname, Path=Width}" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="10" Text="{Binding ElementName=lbxPersonFamilyName, Path=SelectedItem.FamilyName}"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

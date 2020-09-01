@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar_ListBox_Demo", "Calender_ListBox_Demo\Calendar_ListBox_Demo.csproj", "{C0D6FF98-74F4-4151-8365-4A5E7E8086E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0D6FF98-74F4-4151-8365-4A5E7E8086E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D6FF98-74F4-4151-8365-4A5E7E8086E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D6FF98-74F4-4151-8365-4A5E7E8086E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D6FF98-74F4-4151-8365-4A5E7E8086E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A6865D0-F457-4EAB-A598-82062F8CD95F}
+	EndGlobalSection
+EndGlobal
