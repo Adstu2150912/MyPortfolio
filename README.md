@@ -10,10 +10,6 @@ Hier komen en/of staan de meest kwalitatieve van alle (documentaties van) applic
 * **bugfixes**: Alle kleine aanpassingen voor het verhelpen van bugs komen en/of staan hier.  
 * **release**: Alle door andere developers goedgekeurde bestanden en folders die samen (onderdelen van) het eindproduct vormen, komen en/of staan hier.  
 
-## Gemaakt in
-
-
-
 ## Auteur
 
 * **Adam Oubelkas** - *Initial work* - [Portfolio](https://github.com/Adstu2150912/MyPortfolio)
