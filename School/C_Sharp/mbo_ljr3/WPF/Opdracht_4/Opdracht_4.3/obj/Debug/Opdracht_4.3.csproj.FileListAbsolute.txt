@@ -1,0 +1,45 @@
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe.config
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.pdb
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csprojAssemblyReference.cache
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.g.cs
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\App.g.cs
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.cache
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.lref
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.baml
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.g.resources
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4._3.Properties.Resources.resources
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.GenerateResource.cache
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.CoreCompileInputs.cache
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.exe
+C:\Users\X-Kai\Source\Repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.pdb
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe.config
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.pdb
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csprojAssemblyReference.cache
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.g.cs
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\App.g.cs
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.cache
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.lref
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.baml
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.g.resources
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4._3.Properties.Resources.resources
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.GenerateResource.cache
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.exe
+C:\Users\O-Kai\source\repos\C Sharp Applicaties\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe.config
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\bin\Debug\Opdracht_4.3.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csprojAssemblyReference.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\App.g.cs
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3_MarkupCompile.lref
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\MainWindow.baml
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.g.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4._3.Properties.Resources.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.GenerateResource.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\WPF\Opdracht_4\Opdracht_4.3\obj\Debug\Opdracht_4.3.pdb

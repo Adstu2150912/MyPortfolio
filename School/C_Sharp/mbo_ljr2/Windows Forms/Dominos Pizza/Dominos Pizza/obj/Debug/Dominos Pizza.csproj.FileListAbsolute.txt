@@ -1,0 +1,78 @@
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojResolveAssemblyReference.cache
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.cache
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+H:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojResolveAssemblyReference.cache
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.Cache
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+E:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojResolveAssemblyReference.cache
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.Cache
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+D:\school\MBO 4 BOL - AO\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojResolveAssemblyReference.cache
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.cache
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+I:\Adam\School\C#\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojAssemblyReference.cache
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.cache
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+H:\School\C#\leerjaar 2\H25\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe.config
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\bin\Debug\Dominos Pizza.pdb
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csprojAssemblyReference.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBestelling.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmBezorging.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.FrmPizzaNaam.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.Properties.Resources.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos_Pizza.WinForms_Dominos_Opdr25.resources
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.GenerateResource.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.csproj.CoreCompileInputs.cache
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.exe
+C:\Users\O-Kai\Documents\GitHub\c-sharp-apps\Dominos Pizza\Dominos Pizza\obj\Debug\Dominos Pizza.pdb

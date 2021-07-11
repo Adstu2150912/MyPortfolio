@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Highscores</title>
+
+    <link link rel="stylesheet" href="../assets/css/style.css" media="all">
+    <script src="../../../../../../../scripts/jquery-3.2.0.min.js"></script>
+    <script src="../assets/js/angular.min.js"></script>
+    <script src="../../../../../../../scripts/Script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('header > h1').empty('*');
+            $('header > h1').css('display', 'none');
+            $('header > h1').append("Hier treft u een uitgewerkte opdracht uit mijn eerste mbo leerjaar").fadeIn(1000);
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1></h1>
+</header>
+<nav>
+    <h3><a href="../../../../../../../index.html">Portfoliowebsite <br> Adam Oubelkas</a></h3>
+    <ul>
+        <li>
+            <a href="../../../../../../webpaginas/Wie-ben-ik.html" id="Wie-ben-ik">Wie ben ik?</a>
+        </li>
+        <li>
+            <a href="../../../../../../webpaginas/Mijn-opleidingen.html" id="Mijn-opleidingen">Mijn Opleidingen</a>
+        </li>
+        <li>
+            <a href="../../../../../../webpaginas/Mijn-portfolio.html" id="Mijn-portfolio">Mijn Portfolio</a>
+        </li>
+        <li>
+            <a href="../../../../../../webpaginas/Mijn-hobby.html" id="Mijn-hobbys">Mijn Hobby's</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <div id="main" ng-app="MyHighscoresApp">
+        <div id="userInfoPanel">
+            <img src="../assets/images/user.jpg">
+            <div ng-controller="userController">
+                <h3 ng-bind="username">
+                    -USERNAME-
+                </h3>
+                <p ng-bind="birthdate">
+                    -GEBOORTEDATUM-
+                </p>
+            </div>
+        </div>
+        <div id="wrapper" ng-controller="highscoreController">
+            <h1 ng-show="statusHighscore">
+                <!-- Deze H1 dient te verdwijnen zodra er een highscore geplaatst is -->
+                Er zijn nog geen highscores geplaatst!
+            </h1>
+
+            <ul>
+                <!-- Hier dienen de LI items van de highscores te komen -->
+                <li ng-repeat="x in highscores track by $index" ng-click="selectHighscore(x)" ng-class="{active : isSelected(x)}">{{x}}</li>
+            </ul>
+
+            <input type="text" placeholder="Nieuwe highscore" ng-model="newHighscore">
+            <button ng-click="addHighscore()">Toevoegen</button>
+            <button ng-click="removeHighscore()">Verwijderen</button>
+        </div>
+
+        <!--Voeg app.js aan dit bestand toe-->
+        <script src="../MyHighscoresApp.js"></script>
+        <!--Voeg alle Angular controllers aan dit bestand toe-->
+        <script src="../controllers/highscoreController.js"></script>
+        <script src="../controllers/userController.js"></script>
+    </div>
+</section>
+<footer>
+    <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
+</footer>
+</body>
+</html>

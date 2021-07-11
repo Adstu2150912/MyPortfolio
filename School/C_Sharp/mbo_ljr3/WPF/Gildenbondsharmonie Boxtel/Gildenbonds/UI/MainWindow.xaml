@@ -1,0 +1,59 @@
+﻿<Window x:Class="Gildenbondsharmonie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ig="http://schemas.infragistics.com/xaml"
+        xmlns:local="clr-namespace:Gildenbondsharmonie"
+        mc:Ignorable="d"
+        Title="Gildenbondsharmonie Boxtel - Administratiesysteem" Height="450" Width="800"
+        x:Name="HoofdVenster"
+        Loaded="HoofdVenster_Loaded">
+    <Window.ContextMenu>
+        <ContextMenu Name="cmHoofdvenster">
+            <MenuItem Header="Subvenster afsluiten" Click="LijstenAfsluiten_Click"/>
+            <MenuItem Header="Applicatie afsluiten" Click="ApplicatieAfsluiten_Click"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Menu DockPanel.Dock="Left" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical">
+                        </StackPanel>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem x:Name="OpenBestand" Header="Bestand" FontFamily="Arial" FontSize="18" Padding="5" HorizontalAlignment="Left">
+                    <MenuItem x:Name="ApplicatieAfsluiten" Header="Applicatie Afsluiten" Click="ApplicatieAfsluiten_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="OpenLijst" Header="Lijst" FontFamily="Arial" FontSize="18" Padding="5">
+                    <MenuItem x:Name="OpenLijstKNMO" Header="KNMO" Click="OpenLijstKNMO_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstGildenbonds" Header="Gildenbondsharmonie Boxtel" Click="OpenLijstGildenbonds_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstGroepen" Header="Groepen" Click="OpenLijstGroepen_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstVerjaardagen" Header="Verjaardagen" Click="OpenLijstVerjaardagen_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstJubilarissen" Header="Jubilarissen" Click="OpenLijstJubilarissen_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstInstrumenten" Header="Instrumenten" Click="OpenLijstInstrumenten_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstLedenInstrumenten" Header="Leden met instrumenten" Click="OpenLijstLedenInstrumenten_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstEvenementtypes" Header="Evenementtypes" Click="OpenLijstEvenementtypes_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstEvenementen" Header="Evenementen" Click="OpenLijstEvenementen_Click"></MenuItem>
+                    <MenuItem x:Name="OpenLijstLedenEvenementen" Header="Leden in evenementen" Click="OpenLijstLedenEvenementen_Click"></MenuItem>
+                    <MenuItem x:Name="LijstenAfsluiten" Header="Alle lijsten aflsuiten" Click="LijstenAfsluiten_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="OpenRegistratie" Header="Registratie" FontFamily="Arial" FontSize="18" Padding="5">
+                    <MenuItem x:Name="OpenRegistratieGildenbonds" Header="Verenigingslid" Click="OpenRegistratieGildenbonds_Click"></MenuItem>
+                    <MenuItem x:Name="OpenRegistratiePersoon" Header="Persoon" Click="OpenRegistratiePersoon_Click"></MenuItem>
+                    <MenuItem x:Name="OpenRegistratieInstrument" Header="Instrument" Click="OpenRegistratieInstrument_Click"></MenuItem>
+                    <MenuItem x:Name="OpenRegistratieJubilea" Header="Jubilea" Click="OpenRegistratieJubilea_Click"></MenuItem>
+                    <MenuItem x:Name="OpenRegistratieEvenement" Header="Evenement" Click="OpenRegistratieEvenement_Click"></MenuItem>
+                    <MenuItem x:Name="RegistratiesAfsluiten" Header="Alle registratiesafsluiten" Click="RegistratiesAfsluiten_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <Frame x:Name="fGildenbonds" NavigationUIVisibility="Hidden" Background="Gray" DockPanel.Dock="Right" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="350" Width="700"></Frame>
+        </StackPanel>
+        <StackPanel Background="LightGray" Margin="0" Orientation="Horizontal">
+            <Image Source="IMG/Gildenbondsharmonie Boxtel Logo.jpg" Width="99.7" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+            <TextBlock Text="© Gildenbondsharmonie Boxtel 2018" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Padding="20"/>
+        </StackPanel>
+    </DockPanel>
+</Window>

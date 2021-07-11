@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+
+description = 'modellen om te gebruiken bij het samenstellen van bp4'
+mainClassName = 'bp4_Model.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies 
+{
+    testCompile 'junit:junit:4.12'
+    compile 'mysql:mysql-connector-java:8.0.20' 
+//    compile 'https://mvnrepository.com/artifact/mysql/mysql-connector-java'
+//    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+}

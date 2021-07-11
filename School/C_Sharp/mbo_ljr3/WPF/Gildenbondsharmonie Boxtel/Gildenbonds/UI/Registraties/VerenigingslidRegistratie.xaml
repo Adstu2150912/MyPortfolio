@@ -1,0 +1,66 @@
+﻿<Page x:Class="Gildenbondsharmonie.UI.VerenigingslidRegistratie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gildenbondsharmonie.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PersoonRegistratie"
+      x:Name="UIVerenigingslidRegistratie"
+      Loaded="UIVerenigingslidRegistratie_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:Name="NaamSubvenster" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Registratie Verenigingslid" FontSize="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+        <ListView x:Name="lvVereniging" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" ItemsSource="{Binding Verenigingsleden}" SelectedItem="{Binding SelectedVereniging}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Lidnummer" DisplayMemberBinding="{Binding Lidnummer,Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="PersoonID" DisplayMemberBinding="{Binding PersoonID,Mode=OneWay}"></GridViewColumn>
+                    <GridViewColumn Header="Startdatum" DisplayMemberBinding="{Binding Startdatum,Mode=OneWay}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Label x:Name="lblRegistratie" Grid.Row="6" Grid.Column="0">Registratie:</Label>
+        <Label x:Name="lblLidnummer" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">Lidnummer</Label>
+        <Label x:Name="lblPersoonID" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">PersoonID</Label>
+        <Label x:Name="lblStartdatum" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Startdatum</Label>
+
+        <TextBox x:Name="txtLidnummer" Grid.Row="8" Grid.Column="0" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvVereniging, Path=SelectedItem.Lidnummer, Mode=OneWay}"></TextBox>
+        <TextBox x:Name="txtPersoonID" Grid.Row="8" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvVereniging, Path=SelectedItem.PersoonID, Mode=OneWay}"></TextBox>
+        <DatePicker x:Name="dpStartdatum" Grid.Row="8" Grid.Column="2" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=lvVereniging, Path=SelectedItem.StartDatum, Mode=OneWay}"></DatePicker>
+
+        <TextBlock Text="Selectie:" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" FontSize="16" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="tbSelectieWeergave" FontFamily="Sans-serif" FontSize="14" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="15"
+        Text="{Binding VerenigingKwalificatie, Mode=OneWay}" Visibility="{Binding VisibilityVereniging, Mode=OneWay}"
+        HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
+        
+        <Button x:Name="BtnInvoeren" Click="BtnInvoeren_Click" Grid.Row="10" Grid.Column="0" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Invoeren</Button>
+        <Button x:Name="BtnBewerken" Click="BtnBewerken_Click" Grid.Row="10" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Bewerken</Button>
+        <Button x:Name="BtnVerwijderen" Click="BtnVerwijderen_Click" Grid.Row="10" Grid.Column="2" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">Verwijderen</Button>
+    </Grid>
+</Page>
