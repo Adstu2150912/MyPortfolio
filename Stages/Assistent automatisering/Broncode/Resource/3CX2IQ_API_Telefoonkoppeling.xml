@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<Crm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Country="NL" Name="IQ" Version="1">
+  <Number Prefix="Zeros" MaxLength="10" />
+  <Connection MaxConcurrentRequests="16" />
+  <Parameters>
+    <Parameter Name="APIkey" Type="String" Editor="String" Title="API Key:" />
+    <Parameter Name="Domain" Type="String" Editor="String" Title="Domain Part:" />
+    <Parameter Name="ReportCallEnabled " Type="Boolean" Editor="String" Title="Enable Call Journaling" />
+    <Parameter Name="Subject " Type="String" Editor="String" Title="Ticket Subject:" />
+    <Parameter Name="InboundCallText " Type="String" Editor="String" Title="Answered Inbound Call:" />
+    <Parameter Name="MissedCallText" Type="String" Editor="String" Title="Missed Call:" />
+    <Parameter Name="OutboundCallText" Type="String" Editor="String" Title="Answered Outbound Call:" />
+    <Parameter Name="NotAnweredOutboundCallText" Type="String" Editor="String" Title="Unanswered Outbound Call:" />
+  </Parameters>
+  <Authentication Type="No">
+    <Value />
+  </Authentication>
+  <Scenarios>
+    <Scenario Id="" Type="REST">
+      <Request SkipIf="" Url="http://localhost/Modern_IQ/Controller/RestController.php?view=searchPhoneNum&amp;phone=[Number]" MessagePasses="0" RequestEncoding="UrlEncoded" RequestType="Get" ResponseType="Json">
+        <Headers>
+          <Value Key="APIkey" Passes="0" Type="String">50c0c49c-1a10-43b5-9510-8f89feb3b3ad</Value>
+        </Headers>
+        <PostValues>
+          <Value Passes="0" Type="String" />
+        </PostValues>
+      </Request>
+      <Rules>
+        <Rule Type="Number">phone</Rule>
+      </Rules>
+      <Variables>
+        <Variable Name="Id" Path="id">
+          <Filter />
+        </Variable>
+        <Variable Name="CompanyName" Path="result.contact.company">
+          <Filter />
+        </Variable>
+        <Variable Name="WorkPhone" Path="result.contact.businessphone">
+          <Filter />
+        </Variable>
+        <Variable Name="WorkPhone2" Path="result.contact.businessphone2">
+          <Filter />
+        </Variable>
+        <Variable Name="Email" Path="result.contact.email">
+          <Filter />
+        </Variable>
+        <Variable Name="PersonName" Path="result.contact.person">
+          <Filter />
+        </Variable>
+        <Variable Name="ProfileURL" Path="result.contact.profile-url">
+          <Filter />
+        </Variable>
+      </Variables>
+      <Outputs Next="" AllowEmpty="false">
+        <Output Type="ContactID" Passes="0" Value="[Id]" />
+        <Output Type="CompanyName" Passes="0" Value="[CompanyName]" />
+        <Output Type="PersonName" Passes="0" Value="[PersonName]" />
+        <Output Type="PhoneBusiness" Passes="0" Value="[WorkPhone]" />
+        <Output Type="PhoneBusiness2" Passes="0" Value="[WorkPhone2]" />
+        <Output Type="Email" Passes="0" Value="[Email]" />
+        <Output Type="ContactUrl" Passes="0" Value="[ProfileURL]" />
+      </Outputs>
+    </Scenario>
+    <Scenario Id="ReportCall" Type="REST">
+      <Request Url="http://localhost/Modern_IQ/Controller/RestController.php?saveCall" MessagePasses="0" RequestEncoding="Json" RequestType="Post" ResponseType="Json">
+        <Headers>
+          <Value Key="APIkey" Passes="0" Type="String">50c0c49c-1a10-43b5-9510-8f89feb3b3ad</Value>
+        </Headers>
+        <PostValues Key="">
+          <Object Key="engagement">
+            <Value Key="active" Passes="1" Type="Boolean">True</Value>
+            <Value Key="type" Passes="1" Type="String">CALL</Value>
+          </Object>
+          <Object Key="associations">
+            <Array Key="contactIds">
+              <Value Key="" Passes="1" Type="Integer">[Contact::ContactID]</Value>
+            </Array>
+          </Object>
+          <Object Key="metadata">
+            <Value Key="toNumber" Passes="1" Type="String">[Agent]</Value>
+            <Value Key="fromNumber" Passes="1" Type="String">[Number]</Value>
+            <Value Key="status" Passes="1" Type="String">COMPLETED</Value>
+            <Value Key="gesprekType" Passes="1" Type="String">[CallType]</Value>
+            <Value Key="duur" Passes="1" Type="Integer">[[[DurationTimespan].get_TotalMinutes()].ToString("F0")]</Value>
+            <Value Key="datum" Passes="1" Type="String">[[CallStartTimeLocal].ToString("yyyy-MM-dd")]</Value>
+            <Value Key="startTijd" Passes="1" Type="String">[[CallStartTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="eindTijd" Passes="1" Type="String">[[CallEndTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="body" Passes="2" Type="String">[Subject] - [InboundCallText]</Value>
+            <Value Key="disposition" Passes="1" Type="String">f240bbac-87c9-4f6e-bf70-924b57d47db7</Value>
+          </Object>
+        </PostValues>
+      </Request>
+      <Variables />
+      <Outputs Next="ReportCallMissed" AllowEmpty="true" />
+    </Scenario>
+    <Scenario Id="ReportCallMissed" Type="REST">
+      <Request SkipIf="[ReportCallEnabled]!=True||[CallType]!=Missed" Url="http://localhost/Modern_IQ/Controller/RestController.php?saveCall" MessagePasses="0" RequestContentType="application/json" RequestEncoding="Json" RequestType="Post" ResponseType="Json">
+        <Headers>
+          <Value Key="APIkey" Passes="0" Type="String">50c0c49c-1a10-43b5-9510-8f89feb3b3ad</Value>
+        </Headers>
+        <PostValues Key="">
+          <Object Key="engagement">
+            <Value Key="active" Passes="1" Type="Boolean">True</Value>
+            <Value Key="type" Passes="1" Type="String">CALL</Value>
+          </Object>
+          <Object Key="associations">
+            <Array Key="contactIds">
+              <Value Key="" Passes="1" Type="Integer">[Contact::ContactID]</Value>
+            </Array>
+          </Object>
+          <Object Key="metadata">
+            <Value Key="toNumber" Passes="1" Type="String">[Agent]</Value>
+            <Value Key="fromNumber" Passes="1" Type="String">[Number]</Value>
+            <Value Key="status" Passes="1" Type="String">COMPLETED</Value>
+            <Value Key="gesprekType" Passes="1" Type="String">[CallType]</Value>
+            <Value Key="duur" Passes="1" Type="Integer">[[[DurationTimespan].get_TotalMinutes()].ToString("F0")]</Value>
+            <Value Key="datum" Passes="1" Type="String">[[CallStartTimeLocal].ToString("yyyy-MM-dd")]</Value>
+            <Value Key="startTijd" Passes="1" Type="String">[[CallStartTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="eindTijd" Passes="1" Type="String">[[CallEndTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="body" Passes="2" Type="String">[Subject] - [MissedCallText]</Value>
+            <Value Key="disposition" Passes="1" Type="String">73a0d17f-1163-4015-bdd5-ec830791da20</Value>
+          </Object>
+        </PostValues>
+      </Request>
+      <Variables />
+      <Outputs Next="ReportCallOutbound" AllowEmpty="true" />
+    </Scenario>
+    <Scenario Id="ReportCallOutbound" Type="REST">
+      <Request SkipIf="[ReportCallEnabled]!=True||[CallType]!=Outbound" Url="http://localhost/Modern_IQ/Controller/RestController.php?saveCallcallType=Uitgaand" MessagePasses="0" RequestContentType="application/json" RequestEncoding="Json" RequestType="Post" ResponseType="Json">
+        <Headers>
+          <Value Key="APIkey" Passes="0" Type="String">50c0c49c-1a10-43b5-9510-8f89feb3b3ad</Value>
+        </Headers>
+        <PostValues Key="">
+          <Object Key="engagement">
+            <Value Key="active" Passes="1" Type="Boolean">True</Value>
+            <Value Key="type" Passes="1" Type="String">CALL</Value>
+          </Object>
+          <Object Key="associations">
+            <Array Key="contactIds">
+              <Value Key="" Passes="1" Type="Integer">[Contact::ContactID]</Value>
+            </Array>
+          </Object>
+          <Object Key="metadata">
+            <Value Key="toNumber" Passes="1" Type="String">[Number]</Value>
+            <Value Key="fromNumber" Passes="1" Type="String">[Agent]</Value>
+            <Value Key="status" Passes="1" Type="String">COMPLETED</Value>
+            <Value Key="gesprekType" Passes="1" Type="String">[CallType]</Value>
+            <Value Key="duur" Passes="1" Type="Integer">[[[DurationTimespan].get_TotalMinutes()].ToString("F0")]</Value>
+            <Value Key="datum" Passes="1" Type="String">[[CallStartTimeLocal].ToString("yyyy-MM-dd")]</Value>
+            <Value Key="startTijd" Passes="1" Type="String">[[CallStartTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="eindTijd" Passes="1" Type="String">[[CallEndTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="body" Passes="2" Type="String">[Subject] - [OutboundCallText]</Value>
+            <Value Key="disposition" Passes="1" Type="String">f240bbac-87c9-4f6e-bf70-924b57d47db7</Value>
+          </Object>
+        </PostValues>
+      </Request>
+      <Variables />
+      <Outputs Next="ReportCallNotanswered" AllowEmpty="true" />
+    </Scenario>
+    <Scenario Id="ReportCallNotanswered" Type="REST">
+      <Request SkipIf="[ReportCallEnabled]!=True||[CallType]!=Notanswered" Url="http://localhost/Modern_IQ/Controller/RestController.php?saveCallcallType=Uitgaand" MessagePasses="0" RequestContentType="application/json" RequestEncoding="Json" RequestType="Post" ResponseType="Json">
+        <Headers>
+          <Value Key="APIkey" Passes="0" Type="String">50c0c49c-1a10-43b5-9510-8f89feb3b3ad</Value>
+        </Headers>
+        <PostValues Key="">
+          <Object Key="engagement">
+            <Value Key="active" Passes="1" Type="Boolean">True</Value>
+            <Value Key="type" Passes="1" Type="String">CALL</Value>
+          </Object>
+          <Object Key="associations">
+            <Array Key="contactIds">
+              <Value Key="" Passes="1" Type="Integer">[Contact::ContactID]</Value>
+            </Array>
+          </Object>
+          <Object Key="metadata">
+            <Value Key="toNumber" Passes="1" Type="String">[Number]</Value>
+            <Value Key="fromNumber" Passes="1" Type="String">[Agent]</Value>
+            <Value Key="status" Passes="1" Type="String">COMPLETED</Value>
+            <Value Key="gesprekType" Passes="1" Type="String">[CallType]</Value>
+            <Value Key="duur" Passes="1" Type="Integer">[[[DurationTimespan].get_TotalMinutes()].ToString("F0")]</Value>
+            <Value Key="datum" Passes="1" Type="String">[[CallStartTimeLocal].ToString("yyyy-MM-dd")]</Value>
+            <Value Key="startTijd" Passes="1" Type="String">[[CallStartTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="eindTijd" Passes="1" Type="String">[[CallEndTimeLocal].ToString("HH:mm:ss")]</Value>
+            <Value Key="body" Passes="2" Type="String">[Subject] - [NotAnsweredOutboundCallText]</Value>
+            <Value Key="disposition" Passes="1" Type="String">73a0d17f-1163-4015-bdd5-ec830791da20</Value>
+          </Object>
+        </PostValues>
+      </Request>
+      <Variables />
+      <Outputs AllowEmpty="false" />
+    </Scenario>
+  </Scenarios>
+</Crm>
