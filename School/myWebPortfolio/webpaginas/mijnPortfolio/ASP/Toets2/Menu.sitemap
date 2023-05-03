@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="" title="Menu"  description="">
-    <siteMapNode url="~/webpaginas/mijnPortfolio/ASP/Toets2/Overzicht.aspx" title="Overzicht"  description="" />
-    <siteMapNode url="~/webpaginas/mijnPortfolio/ASP/Toets2/Records.aspx" title="Records"  description="" />
-  </siteMapNode>
-</siteMap>
