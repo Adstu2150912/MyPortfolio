@@ -24,7 +24,7 @@ Hier komen en/of staan bijwerkingen voor de web-applicatie en omheenliggende fac
 
 ## Auteurs
 
-* **Adam Oubelkas**, **Kees Lagendijk** - [Project](https://github.com/OkazX97/Modern_IQ)
+* **Adam Oubelkas** - [Project](https://github.com/OkazX97/Modern_IQ)
 
 
 
