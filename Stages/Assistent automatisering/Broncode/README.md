@@ -5,8 +5,7 @@ Hier komen en/of staan bijwerkingen voor de web-applicatie en omheenliggende fac
 # Achtergrondinformatie
 
 * **Thematiek**: Gericht op innovatie, waarvan de innovatie bestaat uit een API-koppeling met een telefooncentrale.
-* **Casuïstiek**: 
-* **Omschrijving eindproduct**: Maatwerk CRM-pakket voor het verwerken van alle administratie en gespreksnotities rondom de helpdesk. Daarnaast worden hier de informatiestromen van facturering en licentieverlening aan klanten bijgehouden.
+* **Casuïstiek**: Maatwerk CRM-pakket voor het verwerken van alle administratie en gespreksnotities rondom de helpdesk. Daarnaast worden hier de informatiestromen van facturering en licentieverlening aan klanten bijgehouden.
 * **Doelgroep & doeleind**: Gericht op het management van Assistent automatisering waarin alle contact en afspraken tussen het bedrijf en haar klanten worden bijgehouden en gestroomlijnd. Hier staan contracten en relaties met klanten. 
 * **Opdrachtgever**: Assistent Automatisering BV.
 
