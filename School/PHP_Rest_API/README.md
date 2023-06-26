@@ -1,7 +1,7 @@
 # PHP REST API
 
 Hier staat een applicatie die ik als webservice (REST API) in PHP geschreven.
-Deze applictie werd gebruikt in mijn vierde beroepsproduct van mijn hbo hbo-opleiding (Associate degree) Ad-Informatica (ISAT-nummer '80075').
+Deze applictie werd gebruikt in mijn vierde beroepsproduct van mijn hbo-opleiding (Associate degree) Informatica (ISAT-nummer '80075').
 De applicatie dient als tussenlaag voor communicatie tussen de smartphoneapplicatie en de online MySQL server.
 
 ## Git Branches
