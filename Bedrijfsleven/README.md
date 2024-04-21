@@ -1,6 +1,6 @@
 # Hobby
 
-In deze module staan de meest kwalitatieve applicaties die ik heb gemaakt tijdens mijn werkervaring.
+In deze module staan de meest kwalitatieve applicaties die ik heb gemaakt in het bedrijfsleven.
 
 ## Git Branches
 
