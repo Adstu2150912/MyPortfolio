@@ -49,7 +49,7 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
             $(document).ready(function () {
                 $('header > h1').empty('*');
                 $('header > h1').css('display', 'none');
-                $('header > h1').append("Let op! Er kan slechts 1 cijfer worden ingevoerd voor één vak!").fadeIn(1000);
+                $('header > h1').append("Let op! Er kan slechts 1 cijfer worden ingevoerd voor ï¿½ï¿½n vak!").fadeIn(1000);
 			});
 	</script>
     <meta charset="utf-8" />
@@ -151,7 +151,7 @@ if(array_key_exists($_POST['vak'], $_SESSION['rapport']) == false){
 			</div>
         </section>
         <footer>
-            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
+            <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
         </footer>
     </body>
 </html>

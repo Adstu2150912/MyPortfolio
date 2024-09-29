@@ -136,8 +136,8 @@
             }
             //Opdracht 150 deel 2
             //Vergelijken welke club de meeste doelpunten heeft
-            foreach ($aClubDoelpunten as $club => $doelpunten){   
-            if($doelpunten > $hoogstedoelpunten){
+            foreach ($aClubDoelpunten as $club => $doelpunten) {   
+            if ($doelpunten > $hoogstedoelpunten) {
                     $hoogstedoelpunten = $doelpunten;
                     $besteclub = $club;
                }
@@ -151,7 +151,7 @@
       </div>
     </section>
     <footer>
-      <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+      <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
     </footer>
   </body>
 </html>

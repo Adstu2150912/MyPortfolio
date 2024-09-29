@@ -4,7 +4,7 @@
 }*/
 include('../scripts/functies.php');
 
-$s['to'] = 'adam.oubelkas@edu-kw1c.nl';
+$s['to'] = 'adamoubelkas@outlook.com';
 $s['subject'] = 'Reactie op portfolio site';
 $s['body'] = 'hallo, dit is een bericht';
 
@@ -78,7 +78,7 @@ Bestandsnaam:   <login.php>
             </div>
         </section>
         <footer>
-            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP5.5 en JQuery 3.1.1.</p>
+            <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP5.5 en JQuery 3.1.1.</p>
         </footer>
     </body>
 </html>

@@ -1,13 +1,16 @@
 <?php
 //begin met PHP sessie    
 session_start();
+
 //hier worden alle highscores opgeslagen in een sessie array
 $_SESSION['highScores'];
+
 //als de onderstaande GET variabel een waarde heeft, koppel die waarde aan sessievariabel
 //hierdoor wordt deze waarde opgeslagen in een sessiearray
 if(isset($_GET['newHighscore'])){
         array_push($_SESSION['highScores'], $_GET['newHighscore']); 
 }
+
 //Sorteer de waardes in sessie array van hoog naar laag
 rsort($_SESSION['highScores']);
 

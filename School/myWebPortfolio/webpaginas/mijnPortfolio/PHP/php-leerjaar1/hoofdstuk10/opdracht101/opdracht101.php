@@ -113,7 +113,7 @@
 
 			$tel = 0;
 
-			echo "Namen die  eindigen met 'n': ";
+			echo "Namen die eindigen met 'n': ";
 
 			//Stringwaardes uithalen waarvan 'n' in laatste positie bevindt (hoogste index)
 			while($tel < $aantal){
@@ -165,7 +165,7 @@
       </div>
     </section>
     <footer>
-      <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+      <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
     </footer>
   </body>
 </html>

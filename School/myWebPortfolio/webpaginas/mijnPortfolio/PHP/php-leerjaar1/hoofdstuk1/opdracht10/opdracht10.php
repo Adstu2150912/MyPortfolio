@@ -51,7 +51,7 @@
             <?php
               // variabelen declareren
               $naam = 'Adam Oubelkas'; // de waarde 'Adam Oubelkas' is een string (tekenreeks).
-              $leeftijd = 23; // de waarde 23 is van het type getal. 
+              $leeftijd = 27; // de waarde 23 is van het type getal. 
               $woonplaats = 'Raamsdonksveer.'; //de waarde 'Raamsdonksveer.' is een string.
               $hobbies = 'fitnessen, internetten, gamen en filosoferen.';//de waarde 'fitnessen, internetten, gamen en filosoferen.' is een string.
               $aantalBroers = 3; //de waarde 3 is van het type getal.
@@ -59,7 +59,7 @@
               $halfbroer = 'Joseph Oubelkas.'; //de waarde 'Joseph Oubelkas.' is een string (tekenreeks).
               $vervolgopleiding = 'hbo - Informatica'; // de waarde 'hbo - Informatica' is een string (tekenreeks).
               $vervolgschool = 'Avans Hogeschool.'; // de waarde 'Avans Hogeschool.' is een string (tekenreeks).
-              $gewensteBeroep = 'Back-End developer/Mobiele applicatiedeveloper'; //de waarde 'Back-End developer/Mobiele applicatiedeveloper' is een string (tekenreeks).
+              $gewensteBeroep = 'Back-End developer/Web-developer'; //de waarde 'Back-End developer/Mobiele applicatiedeveloper' is een string (tekenreeks).
 
 
               // strings met variabelen printen in browser 
@@ -80,7 +80,7 @@
       </div>
     </section>
     <footer>
-      <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+      <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
     </footer>
   </body>
 </html> 

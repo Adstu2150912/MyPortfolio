@@ -53,14 +53,14 @@
 
                 $voornaam = "Adam";
                 $achternaam = "Oubelkas";
-                $leeftijd = "23 jaar";
+                $leeftijd = "27 jaar";
                 $woonplaats = "Raamsdonksveer.";
                 $hobbies = "fitnessen, internetten, gamen en filosoferen.";
                 $jongereBroers = "Anis en Elias.";
                 $halfBroer = "Joseph Oubelkas.";
                 $vervolgopleiding = "hbo - Informatica";
                 $vervolgschool = "Avans Hogeschool.";
-                $gewensteBeroep = "Back-End Developer/Mobiele Applicatiedeveloper";
+                $gewensteBeroep = "Back-End Developer/Web-developer";
 
                 // declaring variabelen van zinnen
 
@@ -86,7 +86,7 @@
       </div>
     </section>
     <footer>
-      <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+      <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
     </footer>
   </body>
 </html>

@@ -1,33 +1,8 @@
 <?php
 //php en html code gemaakt door Adam Oubelkas uit IO1E4
 
-$getal = 13061997; // Neem je geboortedatum - 13 juni 1997 
-//echo $getal;
-//echo "<br>";
-$leeftijd = 23; //Neem je leeftijd - 23 jaar
-//echo $leeftijd;
-//echo "<br>";
-//$getal++; // $getal = 13061998
-//echo $getal;
-//echo "<br>";
-//$getal /=$leeftijd; // $getal = $getal / $leeftijd = 687473.57894737
-//echo $getal;
-//echo "<br>";
-//$getal = ceil($getal); //$getal = 687474 ($getal afgerond in hele getal (>= 0,45 = 1; < 0,45 = 0)) 
-//echo $getal;
-//echo "<br>";
-//$getal--; //$getal = $getal - 1 = 687473
-//echo $getal;
-//echo "<br>";
-//$getal +=50; //$getal = $getal + 50 = 687523
-//echo $getal;
-//echo "<br>";
-//$getal /=3; //$getal = $getal / 3 = 229174.33333333
-//echo $getal;
-//echo "<br>";
-//$getal = $getal % 15; //$getal = $getal rest 15 = 4
-//echo $getal;
-//echo "<br>";
+$getal = 111997; // Neem je geboortedatum
+$leeftijd = 27; //Neem je leeftijd - 27 jaar
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +70,7 @@ $leeftijd = 23; //Neem je leeftijd - 23 jaar
       </div>
     </section>
     <footer>
-      <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
+      <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP7.1 en JQuery 3.2.0.</p>
     </footer>
   </body>
 </html>

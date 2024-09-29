@@ -84,7 +84,7 @@ session_destroy();
          </div>
         </section>
         <footer>
-            <p>&copy 2020 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
+            <p>&copy 2024 Adam Oubelkas <br> Gemaakt in HTML5, CSS3, PHP 7.1 en JQuery 3.2.0.</p>
         </footer>
     </body>
 </html>
