@@ -1,7 +1,7 @@
 # Studeeropdracht Molveno Lake Resort
 
 In deze module staat een PHP Laravel website die ik in teamsverband, zowel heb ontworpen als ontwikkeld gedurende mijn cursus Capgemini Software Engineering track.
-Deze website dient als Customer Relationship Management (CRM) systeem voor een fictieve klant bij Molveno Lake Resort. 
+Deze website dient als Customer Relationship Management (CRM) systeem voor een fictieve opdracht van Capgemini Academy bij Molveno Lake Resort. 
 
 ## Gemaakt in  
 
