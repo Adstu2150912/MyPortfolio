@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
+body.detail-page {
+    display: revert!important;
+    min-height: revert!important;
+}
+
+#main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    padding: 0 170px;
+    background-color: #C2E5F2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#placeholders {
+    box-sizing: border-box;
+}
+
+.guest-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.guest-btn:hover:not(:disabled) {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+}
+
+.guest-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.guest-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: #f3f4f6;
+}
+
+.guest-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.guest-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+}
+
+#adults-count,
+#children-count,
+#toddlers-count {
+    min-width: 2rem;
+    display: inline-block;
+    color: #111827;
+}
+
+:root{
+    --color-dark-blue: #022859;
+    --color-blue: #8ec8e4;
+    --color-light-blue: #C2E5F2;
+}
+
+.date-picker {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.date-picker input[name="daterange"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: var(--color-dark-blue);
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.date-picker input[name="daterange"]:hover,
+.date-picker input[name="daterange"]:focus {
+    border-color: var(--color-dark-blue);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* Custom DateRangePicker Styling */
+.custom-daterangepicker .daterangepicker {
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-family: 'Ubuntu';
+}
+
+.daterangepicker .calendar-table {
+    border-radius: 8px;
+    background-color: white;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: var(--color-blue) !important;
+    color: var(--color-dark-blue) !important;
+    font-weight: bold;
+}
+
+.daterangepicker td.in-range {
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue);
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+    background-color: var(--color-light-blue);
+    border-radius: 4px;
+}
+
+.daterangepicker .drp-buttons .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.daterangepicker .ranges li {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: var(--color-dark-blue);
+}
+
+.daterangepicker .ranges li:hover,
+.daterangepicker .ranges li.active {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.daterangepicker .ranges {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.daterangepicker .month {
+    font-weight: bold;
+    color: var(--color-dark-blue);
+}
+
+@media screen and (orientation: portrait) {
+    #main-logo > h1 {
+        display: none;
+    }
+}

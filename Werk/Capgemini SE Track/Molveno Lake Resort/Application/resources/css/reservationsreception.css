@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    min-height: calc(100vh - 7rem);
+    padding: 2.5rem 2.5rem;
+    background-color: #C2E5F2;
+}
+
+html, body, #reservations, .content, * {
+        scrollbar-width: none !important; /* Firefox */
+        -ms-overflow-style: none !important; /* IE and Edge */
+    }
+    
+    html::-webkit-scrollbar, 
+    body::-webkit-scrollbar, 
+    #reservations::-webkit-scrollbar,
+    .content::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important; /* Chrome, Safari, Opera */
+        background: transparent !important;
+    }

@@ -1,0 +1,45 @@
+.content { 
+    overflow-y: visible !important;
+    overflow-x: hidden !important;
+}
+
+html, body { 
+    overflow-x: hidden !important;
+    max-width: 100vw;
+}
+
+.scrollable-container {
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-white.rounded-lg.shadow.mb-8 {
+    margin-bottom: 30px;
+}
+
+.sticky-filter {
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sticky-filter::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-height: 700px) {
+    .sticky-filter {
+        max-height: 500px;
+    }
+}
