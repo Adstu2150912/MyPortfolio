@@ -16,7 +16,8 @@ transform left:
     xpos -0.25
 transform right:
     xpos 0.25
-define Gintoki = Character('Gintoki', color="#c8ffc8") ##image = "images/Gintoki.png")
+
+define Gintoki = Character('Gintoki Sakata', color="#c8ffc8") ##image = "images/Gintoki.png")
 image Gintoki = "char/Gintoki.png"
 image Angry Gintoki = "char/Gintoki(Angry).png"
 
@@ -101,7 +102,6 @@ label openingscreen:
     with Pause(1)
     
     play music "music/31 - Banji Ya Gin Chan to wa Ore Tachi no Koto da!.mp3"  fadein 1.0
-    
     show text "After many years..." with dissolve
     with Pause(2)
     
@@ -146,7 +146,7 @@ label prologue_campaign:
     with dissolve
     show Kagura
     with dissolve
-    Kagura "Exactly, after all this time I thought Bandai Namco and the game industry has given up on us."
+    Kagura "Exactly, after all this time I thought Bandai Namco and the game industry have given up on us."
     hide Kagura
     with dissolve
     show Gintoki
@@ -170,7 +170,7 @@ label prologue_campaign:
     with dissolve
     show Gintoki
     with dissolve
-    Gintoki "It IS true, look over there! As of right now, this game is being played in front of us by this gamer!"
+    Gintoki "It IS true, look over there! As of right now, this game is being played in front of us by this person!"
     hide Gintoki
     with dissolve
     show Kagura
@@ -218,7 +218,7 @@ label prologue_campaign:
     with dissolve
     show Kagura
     with dissolve
-    Kagura "I agree, this game is made by \"A.Oubelkas\" So we don’t have to worry much."
+    Kagura "I agree, this game is made by \"Adam Oubelkas\" So we don’t have to worry much."
     hide Kagura
     with dissolve
     show Shinpachi
@@ -411,7 +411,7 @@ label game:
            ToyakoSennin "Huh? No, but… What?"
            ToyakoSennin "This {b}{i}Visual Novel{/i}{/b} has only just begun…"
            ToyakoSennin "You were supposed to accept my offer and get motivated."
-           ToyakoSennin "You need acquire atleast some new deadly techniques now. Wouldn’t that be nice?"
+           ToyakoSennin "You need to acquire atleast some new deadly techniques now. Wouldn’t that be nice?"
            ToyakoSennin "If I do say so myself, it’s really useful."
            ToyakoSennin "Let me teach it to you."
            Shinpachi "Excuse me, but it’s our day off."
@@ -487,7 +487,7 @@ label game:
            hide Lake Toya Sennin with dissolve
            hide Angry Gintoki with dissolve
            hide Angry Kagura with dissolve
-           show Angry Gintoki at left with dissolve
+           show Angry Gintoki at left with dissolve           
            Gintoki "What do you want from us?"
            Gintoki "Tell us straight…exactly what are you trying to do?"
            show Smug Toyako Sennin at right
@@ -528,10 +528,10 @@ label game:
            ToyakoSennin "No, in fact, I'll force you all to stay here until you gain something interesting to use!"
            ToyakoSennin "Unless you become stronger, you'll never leave this place! "
            stop music fadeout 0.3 
+           play music "music/11 - Dorobou wa Dorobou Demo Koi Dorobou sa!!.mp3" fadein 0.5
            hide Lake Toya Sennin with dissolve
            show Gintoki with dissolve
            Gintoki "Ah, that's fine."
-           play music "music/11 - Dorobou wa Dorobou Demo Koi Dorobou sa!!.mp3" fadein 0.5
            show Shinpachi at right with dissolve
            Shinpachi "First let's switch the light on here."
            scene bg shiro with fade
@@ -565,8 +565,8 @@ label game:
            play sound "sound/Gintama - Katsura's rap[Part I].mp3"
            show Elizabeth at left with dissolve 
            play sound "sound/Gintama - Katsura's rap[Part II].mp3"
-           Guest "If you’re gonna do it, do it now, Zura."
-           Guest "If you're gonna do it, do it now, Zura."
+           Guest "If you’re going to do it, do it now, Zura."
+           Guest "If you're going to do it, do it now, Zura."
            Guest "Joui is Joy! Joui is Joy!"
            Guest "Now repeat after me!"
            hide Elizabeth with dissolve
@@ -600,10 +600,10 @@ label game:
            hide Angry Gintoki with dissolve
            show Toyako Sennin Mom with dissolve
            ToyakoMom "Sure, it has its shortcomings."
-           ToyakoMom "But I’m confident that one day it’ll eventually be powerful enough to pierce the heavens!"
+           ToyakoMom "But I’m confident that one day it’ll eventually be powerful enough to pierce the very heavens itself!"
            ToyakoMom "How about I show you some other technique?"
            stop music fadeout 0.8
-           ToyakoMom "Hasegawa!"
+           ToyakoMom "It is your turn now, Hasegawa!"
            hide DJ Ozura with dissolve
            hide Elizabeth with dissolve
            hide Toyako Sennin Mom with dissolve
@@ -623,8 +623,8 @@ label game:
            ToyakoMom "Hasegawa has unlocked a hidden power which makes him twice as stronger."
            Shinpachi "But this is actually not a technique…"
            Shinpachi "But rather, a transformation?!"
-           Hasegawa "Before, I was just an ordinary Middle-Aged Dumb-Ass Oldie, in short a MADAO."
-           Hasegawa "But, by having been through some intense anger, pain and sadness, I have become a Super MADAO."
+           Hasegawa "Before, I was just an ordinary Middle-Aged Dumb-Ass Oldie, in short a MADAO (a BUM)."
+           Hasegawa "But, by having been through some intense anger, pain and sadness, I have become a Super MADAO (still a bum)."
            Shinpachi "A Super MADAO?!"
            Shinpachi "That is supposed to be impressive?!"
            Shinpachi "In which way and situation is that be useful?"
@@ -632,7 +632,7 @@ label game:
            Gintoki "Which part of that do you even understand?!"
            Katsura "After witnessing the death of his dear friends…"
            Katsura "Grillin, Pickle, Tenshindon and Begeta"
-           Katsura "To surpass your own limits, your weakness, you must overcome it!"
+           Katsura "He had to surpass his very own limits, his own weakness, he had to overcome it!"
            Shinpachi "That simply doesn’t make any sense!"
            Hasegawa "Don’t you worry, this is just the beginning!"
            Gintoki "No! Just stop this already!"
@@ -673,7 +673,7 @@ label game:
            Shinpachi "Quit saying such obnoxious things!"
            Shinpachi "There’ll {i}never{/i} be a game for us {i}ever{/i} again!!"
            Gintoki "There are a lot of young boys among the other protagonists of popular series."
-           Gintoki "But I’m gonna say something."
+           Gintoki "But I’m going to say something."
            Gintoki "As an adult protagonist, I’m going to make sure I say that what’s not good is not good."
            hide Angry Shinpachi with dissolve
            show Shinpachi Expression 1 at left with dissolve
@@ -705,7 +705,7 @@ label game:
                    show Gintoki at right with dissolve:
                        alpha 0.5
                    play music "music/21 - Eyecatch Desuzee.mp3" fadein 0.5
-                   show text "{size=+25}{color=#000000}-Stay tuned! \n Coming soon!{/color}{/size}" at truecenter
+                   show text "{size=+25}{color=#000000}~ Stay tuned! ~ \n ~ Coming soon! ~{/color}{/size}" at truecenter
                    pause(7)
                    hide text with dissolve
        stop music fadeout 1.0
