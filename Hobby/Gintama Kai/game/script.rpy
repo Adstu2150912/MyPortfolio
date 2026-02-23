@@ -135,8 +135,8 @@ label prologue_campaign:
     "..."
     show Shinpachi
     with dissolve
-    Shinpachi "Uhm, excuse me…where are we?" 
-    Shinpachi "And what are we supposed to do?" 
+    Shinpachi "Uhm, excuse me…where are we?" (multiple=2)
+    Shinpachi "And what are we supposed to do?" (multiple=2)
     hide Shinpachi
     with dissolve
     show Gintoki
@@ -176,7 +176,7 @@ label prologue_campaign:
     show Kagura
     with dissolve
     Kagura "Wow, that person in front of us has too much free time."
-    Kagura "Why would someone bother picking up the anime Gintama, let alone this game."
+    Kagura "Why would someone bother picking up the anime Gintama, let alone this game." 
     hide Kagura
     with dissolve
     show Shinpachi
@@ -565,8 +565,8 @@ label game:
            play sound "sound/Gintama - Katsura's rap[Part I].mp3"
            show Elizabeth at left with dissolve 
            play sound "sound/Gintama - Katsura's rap[Part II].mp3"
-           Guest "If you’re going to do it, do it now, Zura."
-           Guest "If you're going to do it, do it now, Zura."
+           Guest "If you’re going to do it, do it now, Zura." (multiple=2)
+           Guest "If you're going to do it, do it now, Zura." (multiple=2)
            Guest "Joui is Joy! Joui is Joy!"
            Guest "Now repeat after me!"
            hide Elizabeth with dissolve
@@ -586,10 +586,11 @@ label game:
            Guest "I know you speak perfectly when I’m not around!"
            play sound "sound/Gintama - Katsura's rap[Part VI].mp3"
            Guest "Okay, one more time."
-           Guest "Okay…Joui is…!"
-           play sound "sound/Gintama - Katsura's rap[Part VII].mp3"
+           Guest "Okay…Joui is…!"(multiple=2)
+           Gintoki "JOY!" (multiple=2) 
+           play sound "sound/Gintama - Katsura's rap[Part VII].mp3" 
            show Angry Gintoki at center with dissolve and vpunch
-           Gintoki "JOY!"
+           
            Guest "Oh."
            Gintoki "Don’t \”oh.\” me. What are you doing here, Zura?"
            play music "music/23 - Dura Janai Katsura daaa!!.mp3" fadein 0.4
