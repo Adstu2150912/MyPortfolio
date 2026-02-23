@@ -17,46 +17,32 @@ transform left:
 transform right:
     xpos 0.25
 
-define Gintoki = Character('Gintoki Sakata', color="#c8ffc8") ##image = "images/Gintoki.png")
-image Gintoki = "char/Gintoki.png"
-image Angry Gintoki = "char/Gintoki(Angry).png"
+init:
+    $ AP = 0; # Affinity points (used to gauge the players 'karma' with the characters in-game as the story progress)
 
-define Kagura = Character('Kagura', color="#c8ffc8") ##image = "images/Kagura.png")
-image Kagura = "char/Kagura.png"
-image Angry Kagura = "char/Kagura(Angry).png"
+# A character that pulls its name from a variable.
+define player = Character("player_name", dynamic=True)
 
-define Shinpachi = Character('Shinpachi Shimura', color="#c8c8ff") ##image = "images/Shinpachi.png")
-image Shinpachi = "char/Shinpachi.png"
-image Shinpachi Expression 1 = "char/Shinpachi(expression1).png"
-image Angry Shinpachi = "char/Shinpachi(Angry).png"
 
-define ToyakoSennin = Character('Lake Toya Spirit', color="#007FFF")
-image Lake Toya Sennin = "char/Toyako Sennin.png"
-image Angry Toyako Sennin = "char/Support/Angry Toyako Sennin.png"
-image Smug Toyako Sennin = "char/Support/Smug Toyako Sennin.png"
-image Yelling Toyako Sennin = "char/Support/Shocked Toyako Sennin.png"
-image Disappointed Toyako Sennin = "char/Support/Disappointed Toyako Sennin 2.png"
+define Gintoki = Character('Gintoki Sakata', image="Gintoki", color="#c8ffc8")
 
-define ToyakoMom = Character("Lake Toya Spirit's Mom", color="#FF0055")
-image Toyako Sennin Mom = "char/Support/Toyako Mom.png"
-image Angry Toyako Mom = "Angry Toyako Mom.png"
+define Kagura = Character('Kagura', image="Kagura", color="#c8ffc8")
 
-define ToyakoDad = Character("Lake Toya Spirit's Dad", color="#857549")
-image Toyako Sennin Dad = "char/Support/Toyako Dad.png"
-define Guest = Character('???', color="#787878")
+define Shinpachi = Character('Shinpachi Shimura', image="Shinpachi", color="#c8c8ff")
 
-define Katsura = Character("Kotarō Katsura", color="#55AAFF")
-image DJ Ozura = "char/DJ Ozura.png"
+define ToyakoSennin = Character('Lake Toya Spirit', image="Toyako Sennin", color="#007FFF")
 
-define Hasegawa = Character("Taizō Hasegawa", color="#857549")
-image Hasegawa-san = "char/Hasegawa idle.png"
-image idleHasegawa = "char/Support/Hasegawa(Idle).png"
-image idle2Hasegawa = "char/Support/Hasegawa(Idle2).png"
-image Super MADAO = "char/Hasegawa(SuperMadao).png"
+define ToyakoMom = Character("Lake Toya Spirit's Mom", image="Toyako Mom", color="#FF0055")
 
-image Elizabeth = "char/Elizabeth.png"
-image ElizabethJoui_is = "char/Elizabeth(Joui is).png"
-image ElizabethJoui_is_JOY = "char/Elizabeth(Joui is JOY!).png"
+define ToyakoDad = Character("Lake Toya Spirit's Dad", image="Toyako Dad", color="#857549")
+
+define Katsura = Character("Kotarō Katsura", image="DJ Ozura", color="#55AAFF")
+
+define Hasegawa = Character("Taizō Hasegawa", image="Hasegawa", color="#857549")
+
+image Elizabeth = "char/Elizabeth (idle).png"
+image ElizabethJoui_is = "char/Elizabeth (Joui is).png"
+image ElizabethJoui_is_JOY = "char/Elizabeth (Joui is JOY!).png"
  
 image bg odd jobs house = "bg/Odd Jobs House.jpg"
 image bg kuro = "bg/Kuro.png"
@@ -70,9 +56,6 @@ image black = "#000"
 ## image movie = Movie(size=800,600),xpos=100,ypos=50,xanchor=50,yanchor=100)
 init:
     image movie = Movie()
-
-
-
 
 label start:
     scene bg internal odd jobs house
@@ -133,100 +116,100 @@ label prologue_campaign:
     play music "music/Gintama OST - 35 - Ore mo, Mou Jump Sotsugyou Shi Nakya Ike nee Toshi da yo naa.mp3" fadein 1
     pause 3
     "..."
-    show Shinpachi
+    show Shinpachi (idle)
     with dissolve
     Shinpachi "Uhm, excuse me…where are we?" (multiple=2)
     Shinpachi "And what are we supposed to do?" (multiple=2)
-    hide Shinpachi
+    hide Shinpachi (idle)
     with dissolve
-    show Gintoki
+    show Gintoki (idle)
     with dissolve
     Gintoki "Isn’t that obvious? Gintama needs its own new video game, that’s why we are here."
-    hide Gintoki
+    hide Gintoki (idle)
     with dissolve
-    show Kagura
+    show Kagura (idle)
     with dissolve
     Kagura "Exactly, after all this time I thought Bandai Namco and the game industry have given up on us."
-    hide Kagura
+    hide Kagura (idle)
     with dissolve
-    show Gintoki
+    show Gintoki (idle)
     with dissolve
     Gintoki "After the anime ended for the 3th time, Gintama lost its novelty."
     Gintoki "In order to make Gintama great again, it has been decided to make visual novel game."
-    hide Gintoki
+    hide Gintoki (idle)
     with dissolve
-    show Kagura
+    show Kagura (idle)
     with dissolve
     Kagura "A game, that’s surprising!"
     Kagura "I’m really excited!"
-    hide Kagura
+    hide Kagura (idle)
     with dissolve
-    show Shinpachi
+    show Shinpachi (Angry)
     with dissolve
     with vpunch
     Shinpachi "Waaiiit!"
     Shinpachi "Why so suddenly a video game, this can’t be true!"
-    hide Shinpachi
+    hide Shinpachi (Angry)
     with dissolve
-    show Gintoki
+    show Gintoki (idle)
     with dissolve
     Gintoki "It IS true, look over there! As of right now, this game is being played in front of us by this person!"
-    hide Gintoki
+    hide Gintoki (idle)
     with dissolve
-    show Kagura
+    show Kagura (idle)
     with dissolve
     Kagura "Wow, that person in front of us has too much free time."
     Kagura "Why would someone bother picking up the anime Gintama, let alone this game." 
-    hide Kagura
+    hide Kagura (idle)
     with dissolve
-    show Shinpachi
+    show Shinpachi (Angry)
     with dissolve
     Shinpachi "Don’t talk like that!!"
     Shinpachi "Pay some respect, we don’t have time for any joke."
     Shinpachi "Remember, this is our chance to shine! So, let’s wrap it this up already."
-    hide Shinpachi
+    hide Shinpachi (Angry)
     with dissolve 
     stop music fadeout 1
     
     scene bg odd jobs house
     with fade
     play music "music/Gintama OST 2 - 28 Nani Shiten no Kono Nin Tachi.mp3" fadein 1.0
-    show Gintoki
+    show Gintoki (idle)
     with dissolve
     Gintoki "Upsie Daisy, let’s start this game!"
-    hide Gintoki
+    hide Gintoki (idle)
     with dissolve
-    show Shinpachi
+    show Shinpachi (Angry)
     with dissolve
     Shinpachi "HOLD ON, why are we using the same background from the anime over and over again?!"
-    hide Shinpachi
+    hide Shinpachi (Angry)
     with dissolve
-    show Kagura
+    show Kagura (idle)
     with dissolve
     Kagura "The budget and time for making this game is tight, so have to sacrifice something."
-    hide Kagura
+    hide Kagura (idle)
     with dissolve
-    show Gintoki
+    show Gintoki (idle)
     with dissolve 
     Gintoki "That’s right, there’s that and why bother? This game won’t get THAT much attention anyway…"
-    hide Gintoki 
+    hide Gintoki (idle)
     with dissolve
-    show Shinpachi
+    show Shinpachi (Angry)
     with dissolve
     Shinpachi "That’s not true! Money and time must not be an issue anymore!"
-    hide Shinpachi
+    hide Shinpachi (Angry)
     with dissolve
-    show Kagura
+    show Kagura (idle)
     with dissolve
     Kagura "I agree, this game is made by \"Adam Oubelkas\" So we don’t have to worry much."
-    hide Kagura
+    hide Kagura (idle)
     with dissolve
-    show Shinpachi
+    show Shinpachi (idle)
     with dissolve
     Shinpachi "Don’t give up just yet, we have to try our best!"
-    hide Shinpachi
+    hide Shinpachi (idle)
     with dissolve
-    show Gintoki
+    show Gintoki (idle)
     with dissolve
     Gintoki "JUST DO IT!"
     ## hide Gintoki
