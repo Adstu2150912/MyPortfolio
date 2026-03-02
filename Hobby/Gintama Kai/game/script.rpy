@@ -23,24 +23,44 @@ init:
 # A character that pulls its name from a variable.
 define player = Character("player_name", dynamic=True)
 
+define Gintoki = Character('Gintoki Sakata', color="#c8ffc8") ##image = "images/Gintoki.png")
+image Gintoki = "char/Gintoki (Idle).png"
+image Angry Gintoki = "char/Gintoki (Angry).png"
 
-define Gintoki = Character('Gintoki Sakata', image="Gintoki", color="#c8ffc8")
+define Kagura = Character('Kagura', color="#c8ffc8") ##image = "images/Kagura.png")
+image Kagura = "char/Kagura (Idle).png"
+image Angry Kagura = "char/Kagura (Angry).png"
 
-define Kagura = Character('Kagura', image="Kagura", color="#c8ffc8")
+define Shinpachi = Character('Shinpachi Shimura', color="#c8c8ff") ##image = "images/Shinpachi.png")
+image Shinpachi = "char/Shinpachi (Idle).png"
+image Shinpachi Disturbed = "char/Shinpachi (disturbed).png"
+image Angry Shinpachi = "char/Shinpachi (Angry).png"
 
-define Shinpachi = Character('Shinpachi Shimura', image="Shinpachi", color="#c8c8ff")
+define ToyakoSennin = Character('Lake Toya Spirit', color="#007FFF")
+image Lake Toya Sennin = "char/Toyako Sennin (Idle).png"
+image Angry Toyako Sennin = "char/Support/Toyako Sennin (Angry).png"
+image Smug Toyako Sennin = "char/Support/Toyako Sennin Smug.png"
+image Yelling Toyako Sennin = "char/Support/Toyako Sennin Shocked.png"
+image Disappointed Toyako Sennin = "char/Support/Disappointed Toyako Sennin 2.png"
 
-define ToyakoSennin = Character('Lake Toya Spirit', image="Toyako Sennin", color="#007FFF")
+define ToyakoMom = Character("Lake Toya Spirit's Mom", color="#FF0055")
+image Toyako Sennin Mom = "char/Support/Toyako Mom.png"
+image Angry Toyako Mom = "Toyako Mom Angry.png"
 
-define ToyakoMom = Character("Lake Toya Spirit's Mom", image="Toyako Mom", color="#FF0055")
+define ToyakoDad = Character("Lake Toya Spirit's Dad", color="#857549")
+image Toyako Sennin Dad = "char/Support/Toyako Dad.png"
+define Guest = Character('???', color="#787878")
 
-define ToyakoDad = Character("Lake Toya Spirit's Dad", image="Toyako Dad", color="#857549")
+define Katsura = Character("Kotarō Katsura", color="#55AAFF")
+image DJ Ozura = "char/DJ Ozura.png"
 
-define Katsura = Character("Kotarō Katsura", image="DJ Ozura", color="#55AAFF")
+define Hasegawa = Character("Taizō Hasegawa", color="#857549")
+image Hasegawa-san = "char/Hasegawa (Idle).png"
+image idleHasegawa = "char/Support/Hasegawa (Idle).png"
+image idle2Hasegawa = "char/Support/Hasegawa (Idle2).png"
+image Super MADAO = "char/Hasegawa (SuperMadao).png"
 
-define Hasegawa = Character("Taizō Hasegawa", image="Hasegawa", color="#857549")
-
-image Elizabeth = "char/Elizabeth (idle).png"
+image Elizabeth = "char/Elizabeth (Idle).png"
 image ElizabethJoui_is = "char/Elizabeth (Joui is).png"
 image ElizabethJoui_is_JOY = "char/Elizabeth (Joui is JOY!).png"
  
@@ -116,33 +136,33 @@ label prologue_campaign:
     play music "music/Gintama OST - 35 - Ore mo, Mou Jump Sotsugyou Shi Nakya Ike nee Toshi da yo naa.mp3" fadein 1
     pause 3
     "..."
-    show Shinpachi (idle)
+    show Shinpachi
     with dissolve
     Shinpachi "Uhm, excuse me…where are we?" (multiple=2)
     Shinpachi "And what are we supposed to do?" (multiple=2)
-    hide Shinpachi (idle)
+    hide Shinpachi
     with dissolve
-    show Gintoki (idle)
+    show Gintoki
     with dissolve
     Gintoki "Isn’t that obvious? Gintama needs its own new video game, that’s why we are here."
-    hide Gintoki (idle)
+    hide Gintoki
     with dissolve
-    show Kagura (idle)
+    show Kagura
     with dissolve
     Kagura "Exactly, after all this time I thought Bandai Namco and the game industry have given up on us."
-    hide Kagura (idle)
+    hide Kagura
     with dissolve
-    show Gintoki (idle)
+    show Gintoki
     with dissolve
     Gintoki "After the anime ended for the 3th time, Gintama lost its novelty."
     Gintoki "In order to make Gintama great again, it has been decided to make visual novel game."
-    hide Gintoki (idle)
+    hide Gintoki
     with dissolve
-    show Kagura (idle)
+    show Kagura
     with dissolve
     Kagura "A game, that’s surprising!"
     Kagura "I’m really excited!"
-    hide Kagura (idle)
+    hide Kagura
     with dissolve
     show Shinpachi (Angry)
     with dissolve
@@ -151,16 +171,16 @@ label prologue_campaign:
     Shinpachi "Why so suddenly a video game, this can’t be true!"
     hide Shinpachi (Angry)
     with dissolve
-    show Gintoki (idle)
+    show Gintoki
     with dissolve
     Gintoki "It IS true, look over there! As of right now, this game is being played in front of us by this person!"
-    hide Gintoki (idle)
+    hide Gintoki
     with dissolve
-    show Kagura (idle)
+    show Kagura
     with dissolve
     Kagura "Wow, that person in front of us has too much free time."
     Kagura "Why would someone bother picking up the anime Gintama, let alone this game." 
-    hide Kagura (idle)
+    hide Kagura
     with dissolve
     show Shinpachi (Angry)
     with dissolve
@@ -174,42 +194,42 @@ label prologue_campaign:
     scene bg odd jobs house
     with fade
     play music "music/Gintama OST 2 - 28 Nani Shiten no Kono Nin Tachi.mp3" fadein 1.0
-    show Gintoki (idle)
+    show Gintoki
     with dissolve
     Gintoki "Upsie Daisy, let’s start this game!"
-    hide Gintoki (idle)
+    hide Gintoki
     with dissolve
     show Shinpachi (Angry)
     with dissolve
     Shinpachi "HOLD ON, why are we using the same background from the anime over and over again?!"
     hide Shinpachi (Angry)
     with dissolve
-    show Kagura (idle)
+    show Kagura
     with dissolve
     Kagura "The budget and time for making this game is tight, so have to sacrifice something."
-    hide Kagura (idle)
+    hide Kagura
     with dissolve
-    show Gintoki (idle)
+    show Gintoki
     with dissolve 
     Gintoki "That’s right, there’s that and why bother? This game won’t get THAT much attention anyway…"
-    hide Gintoki (idle)
+    hide Gintoki
     with dissolve
     show Shinpachi (Angry)
     with dissolve
     Shinpachi "That’s not true! Money and time must not be an issue anymore!"
     hide Shinpachi (Angry)
     with dissolve
-    show Kagura (idle)
+    show Kagura
     with dissolve
     Kagura "I agree, this game is made by \"Adam Oubelkas\" So we don’t have to worry much."
-    hide Kagura (idle)
+    hide Kagura
     with dissolve
-    show Shinpachi (idle)
+    show Shinpachi
     with dissolve
     Shinpachi "Don’t give up just yet, we have to try our best!"
-    hide Shinpachi (idle)
+    hide Shinpachi
     with dissolve
-    show Gintoki (idle)
+    show Gintoki
     with dissolve
     Gintoki "JUST DO IT!"
     ## hide Gintoki
@@ -486,7 +506,7 @@ label game:
                
            label keep_listening:
                hide Gintoki with dissolve
-               show Shinpachi Expression 1 at center with dissolve
+               show Shinpachi Disturbed at center with dissolve
                Shinpachi "I’ll tell it to you straight…" 
                Shinpachi "We’re strong enough to make a spirit’s eyes tear up, so that’s enough for us."
                ToyakoSennin "Why are you so stubborn?"
@@ -643,7 +663,7 @@ label game:
            ToyakoDad "To make this game at least appealing, the player must have something fun to do."
            ToyakoDad "That’s what I’m trying to say!"
            Kagura "So in other words, you have to keep the player busy with a lot dialogue like we’re doing now, right?"
-           show Shinpachi Expression 1 at left with dissolve
+           show Shinpachi Disturbed at left with dissolve
            Shinpachi "Actually, I think what’s really odd is us characters in this game talking about it."
            Shinpachi "But we have always done things like that in the past anyway."
            show Gintoki at right with dissolve
@@ -652,7 +672,7 @@ label game:
            Gintoki "What matters is the kind of profit, especially sales, we can make of this."
            Gintoki "Whenever someone tries to make and sell a game of us,"
            Gintoki "When the sales started to slow down, it’s already game over for us as well as this game."
-           hide Shinpachi Expression 1 with dissolve
+           hide Shinpachi Disturbed with dissolve
            show Angry Shinpachi at left with dissolve
            Shinpachi "Quit saying such obnoxious things!"
            Shinpachi "There’ll {i}never{/i} be a game for us {i}ever{/i} again!!"
@@ -660,7 +680,7 @@ label game:
            Gintoki "But I’m going to say something."
            Gintoki "As an adult protagonist, I’m going to make sure I say that what’s not good is not good."
            hide Angry Shinpachi with dissolve
-           show Shinpachi Expression 1 at left with dissolve
+           show Shinpachi Disturbed at left with dissolve
            Shinpachi "But you’re the worst one of all!"
            Shinpachi "I’ve never heard of a protagonist that’s such a pain in the ass that he comments on product development!!"
            Gintoki "I’m saying we can’t just be indifferent and leave everything as it is now."
@@ -672,7 +692,7 @@ label game:
                    stop music fadeout 0.5
                    show Kagura at center with dissolve:
                        alpha 0.5
-                   show Shinpachi Expression 1 at left with dissolve:
+                   show Shinpachi Disturbed at left with dissolve:
                        alpha 0.5
                    show Gintoki at right with dissolve:
                        alpha 0.5
@@ -684,7 +704,7 @@ label game:
                    stop music fadeout 0.5
                    show Kagura at center with dissolve:
                        alpha 0.5
-                   show Shinpachi Expression 1 at left with dissolve:
+                   show Shinpachi Disturbed at left with dissolve:
                        alpha 0.5
                    show Gintoki at right with dissolve:
                        alpha 0.5
